@@ -1,0 +1,19 @@
+{
+  "url": "https://chasearenella.com",
+  "name": "Chase Arenella",
+  "siteName": "Chase Arenella — Field Guide",
+  "tagline": "A field guide to decision-making, systems thinking, and AI-augmented leadership.",
+  "description": "Chase Arenella's field guide: short, practical reference pages on decision loops, systems thinking, AI-augmented leadership, and what competitive gaming teaches about performing under pressure.",
+  "personDescription": "Chase Arenella writes about AI-augmented leadership, systems thinking, and decision-making under pressure, drawing on agile delivery and competitive gaming.",
+  "alternateNames": ["ChaseOfSpadez"],
+  "sameAs": [
+    "https://carenella1.github.io/",
+    "https://www.youtube.com/@ChaseOfSpadez",
+    "https://aiproductivityguide.substack.com/"
+  ],
+  "elsewhere": [
+    { "href": "https://carenella1.github.io/", "label": "Essays and articles" },
+    { "href": "https://www.youtube.com/@ChaseOfSpadez", "label": "Videos on YouTube" },
+    { "href": "https://aiproductivityguide.substack.com/", "label": "AI Productivity Lab newsletter" }
+  ]
+}

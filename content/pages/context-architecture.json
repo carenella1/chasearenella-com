@@ -1,0 +1,61 @@
+{
+  "slug": "context-architecture",
+  "type": "concept",
+  "title": "Context Architecture",
+  "seoTitle": "Context Architecture: Fixing Tool Fragmentation on Teams | Chase Arenella",
+  "description": "Context architecture is deciding where a team's knowledge lives and how it flows. Why it matters more than which tools you pick, and how to start.",
+  "answer": "Context architecture is the deliberate design of where a team's knowledge lives, who can find it, and how it moves between tools. It's the fix for tool fragmentation, where every decision costs extra time because the context is scattered.",
+  "sections": [
+    {
+      "heading": "The problem it solves",
+      "paragraphs": [
+        "Most teams don't choose their information layout. It accumulates. Decisions live in chat, plans live in docs, status lives in a tracker, and the reasons behind all of it live in someone's head. Each tool works fine on its own. Together they impose a hidden tax: every decision starts with a search.",
+        "That tax is easy to miss because it's spread thin. Five minutes here, a repeated question there. Across a team and a year, it adds up to weeks of lost time and a steady stream of decisions made on partial information."
+      ]
+    },
+    {
+      "heading": "The three questions",
+      "paragraphs": [
+        "Designing context architecture comes down to answering three questions and writing the answers down."
+      ],
+      "list": {
+        "type": "ol",
+        "items": [
+          "<strong>Where does each kind of information live?</strong> One home for decisions, one for plans, one for status.",
+          "<strong>What is the source of truth when two tools disagree?</strong>",
+          "<strong>How does context travel?</strong> Which links, summaries, or handoffs connect the homes."
+        ]
+      }
+    },
+    {
+      "heading": "Why it beats a new tool",
+      "paragraphs": [
+        "The usual response to fragmentation is to adopt a tool that promises to unify everything. It rarely works, because the problem isn't the tools. It's the absence of agreed rules about how to use them. A new tool without rules becomes one more place to search.",
+        "Rules travel. If the team agrees that every decision is logged in one place with a link back to the discussion, that rule survives any tool change."
+      ]
+    },
+    {
+      "heading": "Where AI fits",
+      "paragraphs": [
+        "AI assistants are only as good as the context they can reach. A well-structured knowledge base makes AI summaries accurate and useful. A fragmented one makes them confident and wrong. Context architecture is the groundwork that makes AI augmentation pay off.",
+        "Start small: pick the one kind of information people search for most often, give it a single home, and redirect every question there for a month."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is tool fragmentation?",
+      "a": "The spread of a team's information across many disconnected tools, so that finding the full context for any decision takes extra searching and guessing."
+    },
+    {
+      "q": "How many tools is too many?",
+      "a": "There's no fixed number. The warning sign is people regularly asking where something lives. That means the architecture, not the tool count, needs work."
+    }
+  ],
+  "related": ["signal-vs-noise", "what-is-ai-augmented-leadership", "what-is-systems-thinking-for-teams"],
+  "further": {
+    "href": "https://carenella1.github.io/articles/16-the-hidden-tax-of-tool-fragmentation.html",
+    "label": "The Hidden Tax of Tool Fragmentation (essay)"
+  },
+  "published": "2026-10-29"
+}

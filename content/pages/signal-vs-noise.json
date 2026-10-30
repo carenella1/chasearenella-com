@@ -1,0 +1,61 @@
+{
+  "slug": "signal-vs-noise",
+  "type": "concept",
+  "title": "Signal vs. Noise",
+  "seoTitle": "Signal vs. Noise: How Leaders Filter Information | Chase Arenella",
+  "description": "Signal is information that should change a decision; noise is everything else. How to tell them apart, and where AI filtering helps or backfires.",
+  "answer": "Signal is information that should change what you do. Noise is information that feels important but shouldn't change anything. Good filtering keeps the signal and drops the noise without hiding the surprises that matter.",
+  "sections": [
+    {
+      "heading": "A working definition",
+      "paragraphs": [
+        "The easiest test is a question: if this were true, would I act differently? If the answer is no, it's noise, no matter how loud it is. A dip in a metric that always dips on Mondays is noise. A customer complaint that matches three others from the same week is signal.",
+        "The test is relative to the decision. The same data point can be signal for one person and noise for another, which is why one shared dashboard rarely serves a whole organization."
+      ]
+    },
+    {
+      "heading": "Why noise wins by default",
+      "paragraphs": [
+        "Noise is usually more frequent, more visible, and more emotional than signal. Alerts, messages, and status updates arrive constantly. The meaningful change arrives quietly, once, inside something that looks routine.",
+        "Without a deliberate filter, attention follows volume. Teams end up responding to whatever is loudest, which is rarely what matters most."
+      ]
+    },
+    {
+      "heading": "Where AI filtering helps",
+      "paragraphs": [
+        "AI tools are good at volume. They can summarize long threads, group duplicate reports, and flag changes from a normal pattern. That frees human attention for judgment."
+      ],
+      "list": {
+        "type": "ul",
+        "items": [
+          "Summarizing a week of updates into what changed.",
+          "Clustering customer feedback by theme.",
+          "Flagging numbers that break from their usual range."
+        ]
+      }
+    },
+    {
+      "heading": "Where it backfires",
+      "paragraphs": [
+        "Over-filtering is the risk. A filter trained on what usually matters will hide what has never mattered before, and the first sign of a new problem often looks like an outlier. Keep a small raw sample in view: a few unfiltered messages, a few untouched data points.",
+        "Review the filter itself on a schedule. Ask what it dropped last month and whether any of it turned out to matter. A filter nobody audits slowly becomes a blindfold."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do you reduce noise for a team?",
+      "a": "Agree on the few decisions each role owns, then route only the information that bears on those decisions to them. Everything else can be available without being pushed."
+    },
+    {
+      "q": "Should leaders read raw data or summaries?",
+      "a": "Mostly summaries, plus a small regular dose of raw data. The raw sample keeps the summaries honest and catches what a summary would smooth away."
+    }
+  ],
+  "related": ["feedback-latency", "what-is-ai-augmented-leadership", "context-architecture"],
+  "further": {
+    "href": "https://carenella1.github.io/articles/11-signal-vs-noise-what-ai-should-and-shouldn-t.html",
+    "label": "Signal vs. Noise: What AI Should (and Shouldn't) Filter (essay)"
+  },
+  "published": "2026-10-29"
+}

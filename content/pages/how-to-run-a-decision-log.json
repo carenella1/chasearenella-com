@@ -1,0 +1,64 @@
+{
+  "slug": "how-to-run-a-decision-log",
+  "type": "question",
+  "title": "How Do You Run a Decision Log?",
+  "seoTitle": "How to Run a Decision Log (With a Simple Template) | Chase Arenella",
+  "description": "A decision log records what you decided, why, and what would prove you wrong. A simple template and the habits that make one actually work.",
+  "answer": "Write down each meaningful decision when you make it: what you chose, the options you rejected, why, and what result would tell you it was wrong. Then set a date to review it. The review is what turns a log into a learning system.",
+  "sections": [
+    {
+      "heading": "Why keep a decision log",
+      "paragraphs": [
+        "Memory rewrites history. A month after a decision, people remember the reasoning that matches the outcome, not the reasoning they actually used. A log captures the thinking before the result is known, so you can judge the decision on its merits instead of its luck.",
+        "It also solves a quieter problem: new team members can see why things are the way they are, instead of reopening settled questions."
+      ]
+    },
+    {
+      "heading": "A simple template",
+      "paragraphs": [
+        "Keep each entry short enough to write in five minutes. If it takes longer, nobody will keep it up."
+      ],
+      "list": {
+        "type": "ol",
+        "items": [
+          "<strong>Date and owner:</strong> who made the call and when.",
+          "<strong>Decision:</strong> one sentence.",
+          "<strong>Options considered:</strong> the two or three real alternatives.",
+          "<strong>Reasoning:</strong> the main reason, plus what you knew and didn't know.",
+          "<strong>Kill criteria:</strong> the result that would make you reverse it.",
+          "<strong>Review date:</strong> when you'll check."
+        ]
+      }
+    },
+    {
+      "heading": "Which decisions to log",
+      "paragraphs": [
+        "Not every choice. Log decisions that are expensive to reverse, that affect more than one team, or that people will ask about later. A good rule: if you'd have to explain it in a meeting six months from now, log it today.",
+        "Skip routine calls. A log full of trivia gets ignored, and then the important entries get ignored with it."
+      ]
+    },
+    {
+      "heading": "Making the review stick",
+      "paragraphs": [
+        "Put the review date on a calendar the moment you write the entry. When it arrives, answer three questions: what happened, did the kill criteria trigger, and what would we do differently with the same information?",
+        "That last question matters. It separates a bad decision from a good decision with a bad outcome, which is the whole point of keeping the log."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What tool should a decision log live in?",
+      "a": "Wherever the team already works: a shared doc, a wiki page, or a single spreadsheet. The best tool is the one people will open without being reminded."
+    },
+    {
+      "q": "Can AI help maintain a decision log?",
+      "a": "Yes, for drafting entries from meeting notes and reminding owners about review dates. The reasoning and the kill criteria should still come from the person accountable for the call."
+    }
+  ],
+  "related": ["decision-loops", "feedback-latency", "which-decisions-should-stay-human"],
+  "further": {
+    "href": "https://carenella1.github.io/articles/14-the-decision-log-the-simplest-system-most.html",
+    "label": "The Decision Log: The Simplest System Most Teams Skip (essay)"
+  },
+  "published": "2026-10-29"
+}

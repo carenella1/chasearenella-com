@@ -1,0 +1,62 @@
+{
+  "slug": "feedback-latency",
+  "type": "concept",
+  "title": "Feedback Latency",
+  "seoTitle": "Feedback Latency: Why Slow Feedback Breaks Teams | Chase Arenella",
+  "description": "Feedback latency is the delay between doing something and learning whether it worked. Why it quietly ruins team performance and how to shorten it.",
+  "answer": "Feedback latency is the time between an action and the moment you learn whether it worked. The longer the gap, the more decisions get made on stale information, and the harder it is to connect cause and effect.",
+  "sections": [
+    {
+      "heading": "Why latency matters more than accuracy",
+      "paragraphs": [
+        "Teams obsess over the quality of their feedback: better metrics, more detailed reviews, richer surveys. Quality matters, but timing matters more. A rough signal you get tomorrow is worth more than a perfect one you get next quarter.",
+        "The reason is simple. Every day between action and feedback, you keep making decisions. If the original action was wrong, you've now stacked more work on top of it. Slow feedback doesn't just delay the lesson. It multiplies the cost of the mistake."
+      ]
+    },
+    {
+      "heading": "How to spot high feedback latency",
+      "paragraphs": [
+        "A few symptoms show up again and again on teams where feedback is too slow."
+      ],
+      "list": {
+        "type": "ul",
+        "items": [
+          "Retrospectives discuss problems nobody remembers clearly.",
+          "Performance reviews surprise people.",
+          "Projects look green until the week they turn red.",
+          "The team argues about what caused a result because too much happened in between."
+        ]
+      }
+    },
+    {
+      "heading": "Ways to shorten the gap",
+      "paragraphs": [
+        "Move reviews closer to the work. A short weekly check beats a long quarterly one because the details are still fresh and the course correction is still cheap.",
+        "Ship smaller. A two-day piece of work tells you something in two days. A two-month project tells you something in two months, and by then the lesson arrives too late to use.",
+        "Pick one leading indicator per goal: something you can see this week that predicts the result you care about next quarter. Then look at it every week, even when nothing seems wrong."
+      ]
+    },
+    {
+      "heading": "The gaming comparison",
+      "paragraphs": [
+        "Games teach fast because feedback is instant. You make a move and see the result in seconds. Players who improve quickly also review replays, which turns a long match into many short feedback cycles. Teams can borrow that habit: review the week, not just the quarter."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a leading indicator?",
+      "a": "A measure you can see early that predicts a later outcome. Weekly active users can lead quarterly revenue; the number of blocked tasks can lead a missed deadline."
+    },
+    {
+      "q": "Does shorter feedback mean more meetings?",
+      "a": "Not necessarily. A fifteen-minute weekly review often replaces longer, less useful quarterly sessions. The goal is less delay, not more ceremony."
+    }
+  ],
+  "related": ["decision-loops", "signal-vs-noise", "how-to-run-a-decision-log"],
+  "further": {
+    "href": "https://carenella1.github.io/articles/10-the-feedback-latency-problem-why-weekly-beats.html",
+    "label": "The Feedback Latency Problem: Why Weekly Beats Quarterly (essay)"
+  },
+  "published": "2026-10-29"
+}

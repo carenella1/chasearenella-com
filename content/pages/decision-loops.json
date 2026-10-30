@@ -1,0 +1,62 @@
+{
+  "slug": "decision-loops",
+  "type": "concept",
+  "title": "Decision Loops",
+  "seoTitle": "Decision Loops: What They Are and How to Tighten Them | Chase Arenella",
+  "description": "A decision loop is the cycle of noticing, deciding, acting, and learning. How to map your team's loop and speed it up without making it sloppy.",
+  "answer": "A decision loop is the repeating cycle a person or team runs to make a choice: notice what changed, decide what to do, act, and learn from the result. The team that closes its loop faster adapts faster.",
+  "sections": [
+    {
+      "heading": "What a decision loop is",
+      "paragraphs": [
+        "Every decision runs through the same four steps, whether it takes a second or a quarter. You <strong>observe</strong> a change. You <strong>decide</strong> on a response. You <strong>act</strong>. Then you <strong>learn</strong> whether the action worked, and that learning feeds the next observation.",
+        "Military strategists call a version of this the OODA loop. Agile teams call it a sprint. A competitive gamer calls it reading the map. The label matters less than the shape: a cycle that either closes quickly and compounds, or drags and goes stale."
+      ]
+    },
+    {
+      "heading": "Where loops slow down",
+      "paragraphs": [
+        "Most teams think their problem is deciding. Usually the delay hides in the other three steps."
+      ],
+      "list": {
+        "type": "ul",
+        "items": [
+          "<strong>Observe:</strong> the signal arrives late, buried in a dashboard nobody opens.",
+          "<strong>Decide:</strong> too many people need to agree, so the choice waits for a meeting.",
+          "<strong>Act:</strong> handoffs between tools and teams add days to a one-hour task.",
+          "<strong>Learn:</strong> nobody checks the result, so the loop never actually closes."
+        ]
+      }
+    },
+    {
+      "heading": "How to tighten a loop without rushing it",
+      "paragraphs": [
+        "Speed comes from removing waiting, not from thinking less. Start by timing each step for one recent decision. The slowest step is almost never the one people complain about.",
+        "Then make three structural changes. Push decisions to the person closest to the information. Agree in advance on what result would change your mind. Schedule the review when you make the decision, not after something goes wrong. A loop with a built-in review date closes on its own."
+      ]
+    },
+    {
+      "heading": "Decision loops under pressure",
+      "paragraphs": [
+        "Competitive games compress the loop into seconds, which makes the pattern easy to see. Strong players don't decide faster because they're smarter. They decide faster because they've pre-loaded responses to common situations and spend their attention only on what's new.",
+        "Teams can do the same. Write down the decisions you make every week and give them default answers. That frees the loop for the decisions that deserve real thought."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is a decision loop the same as the OODA loop?",
+      "a": "The OODA loop (observe, orient, decide, act) is one well-known version. The core idea is the same: decisions are cycles, and the speed and quality of the cycle matters more than any single choice."
+    },
+    {
+      "q": "How fast should a team's decision loop be?",
+      "a": "As fast as the environment changes. If your market or project shifts weekly, a monthly review loop means you're always responding to old information."
+    }
+  ],
+  "related": ["feedback-latency", "how-to-run-a-decision-log", "tilt-management"],
+  "further": {
+    "href": "https://carenella1.github.io/articles/09-decision-loops-under-pressure.html",
+    "label": "Decision Loops Under Pressure (essay)"
+  },
+  "published": "2026-10-29"
+}

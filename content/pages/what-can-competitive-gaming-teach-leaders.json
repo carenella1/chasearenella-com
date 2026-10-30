@@ -1,0 +1,62 @@
+{
+  "slug": "what-can-competitive-gaming-teach-leaders",
+  "type": "question",
+  "title": "What Can Competitive Gaming Teach Leaders?",
+  "seoTitle": "What Can Competitive Gaming Teach Leaders? 5 Transferable Skills | Chase Arenella",
+  "description": "Competitive gaming trains fast decisions, honest review, and team communication under pressure. Five skills that transfer directly to leading teams.",
+  "answer": "Competitive gaming trains the same skills leadership needs: deciding under time pressure, reviewing mistakes honestly, communicating clearly in chaos, adapting to strategy shifts, and recovering quickly from setbacks. Games just compress the feedback into minutes.",
+  "sections": [
+    {
+      "heading": "Why games are a useful training ground",
+      "paragraphs": [
+        "Most workplaces give slow, blurry feedback. You make a call and learn months later whether it worked, mixed in with a dozen other factors. Competitive games give fast, clear feedback. You make a call and see the result in seconds.",
+        "That speed makes the underlying skills visible and practicable. A player can make hundreds of decisions in an evening and review them the next day. Few leaders get that many repetitions in a year."
+      ]
+    },
+    {
+      "heading": "Five skills that transfer",
+      "paragraphs": [
+        "These show up again and again in strong players and strong team leads alike."
+      ],
+      "list": {
+        "type": "ol",
+        "items": [
+          "<strong>Deciding with incomplete information:</strong> committing to a read and adjusting as new information arrives.",
+          "<strong>Reviewing replays:</strong> studying your own decisions without ego.",
+          "<strong>Callouts:</strong> short, specific communication that a team can act on instantly.",
+          "<strong>Reading the meta:</strong> noticing when the dominant strategy is changing.",
+          "<strong>Managing tilt:</strong> resetting after a loss instead of spiraling."
+        ]
+      }
+    },
+    {
+      "heading": "Team communication under pressure",
+      "paragraphs": [
+        "Good team play depends on callouts: brief messages that say what, where, and what to do about it. Rambling or emotional communication gets people eliminated. The same discipline improves meetings and incident response. Say the fact, the location, and the ask, in that order.",
+        "Strong teams also agree on roles before the match starts. Everyone knows who makes the final call in a disagreement, so the team doesn't freeze when seconds matter."
+      ]
+    },
+    {
+      "heading": "Where the comparison stops",
+      "paragraphs": [
+        "Games have clear rules, equal starting positions, and a definite end. Work has none of those. The transferable part is the set of decision habits, not the competitive framing. Treating colleagues as opponents, or every quarter as a match to win at any cost, takes the wrong lesson from the game."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do employers value gaming experience?",
+      "a": "Increasingly, when it's described in terms of skills: teamwork, communication, strategic thinking, and handling pressure. The specific game matters far less than what you practiced."
+    },
+    {
+      "q": "What is a replay review?",
+      "a": "Watching a recording of your own match to spot decision errors. The workplace equivalent is a blameless retrospective on a recent project or decision."
+    }
+  ],
+  "related": ["tilt-management", "meta-awareness", "decision-loops"],
+  "further": {
+    "href": "https://carenella1.github.io/articles/05-gaming-leadership-skills.html",
+    "label": "Gaming Leadership Skills (essay)"
+  },
+  "published": "2026-10-29"
+}

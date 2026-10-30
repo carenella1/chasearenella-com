@@ -1,0 +1,75 @@
+name: Write Page
+
+# Twice a month, an hour after the main site's content pipeline: write the
+# next guide from content/queue.json, rebuild the site, and open a PR to review.
+on:
+  schedule:
+    - cron: '0 7 1,15 * *'
+  workflow_dispatch:
+
+concurrency:
+  group: write-page
+  cancel-in-progress: false
+
+jobs:
+  write:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Refuse to run while a previous auto-page PR is open
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          OPEN=$(gh pr list --label auto-page --state open --json number --jq '[.[].number | "#\(.)"] | join(", ")')
+          if [ -n "$OPEN" ]; then
+            echo "::error::Auto-page PR(s) $OPEN still open. Merge or close them, then re-run this workflow."
+            exit 1
+          fi
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Write the next guide
+        run: node scripts/write-page.js
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Build the site
+        run: node scripts/build.js
+
+      - name: Commit changes and open PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create auto-page --color BFD4F2 --description "Opened by the Write Page workflow" || true
+
+          BRANCH="page/$(date +'%Y-%m-%d')-${{ github.run_number }}"
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git checkout -b "$BRANCH"
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit; nothing to open a PR for."
+            exit 0
+          fi
+
+          TITLE=$(git diff --cached --name-only -- content/pages | head -1 | xargs -I{} node -p "require('./{}').title")
+          git commit -m "New guide: $TITLE"
+          git push -u origin "$BRANCH"
+
+          gh pr create \
+            --title "New guide: $TITLE" \
+            --label auto-page \
+            --body "Written by the Write Page workflow from the next topic in content/queue.json. The page passed the privacy, HTML, length, link, and similarity checks in scripts/write-page.js. Merge to publish." \
+            --base main \
+            --head "$BRANCH"

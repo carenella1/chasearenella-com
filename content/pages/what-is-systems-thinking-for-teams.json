@@ -1,0 +1,62 @@
+{
+  "slug": "what-is-systems-thinking-for-teams",
+  "type": "question",
+  "title": "What Is Systems Thinking for Teams?",
+  "seoTitle": "What Is Systems Thinking for Teams? A Practical Introduction | Chase Arenella",
+  "description": "Systems thinking means looking at how a team's structure produces its results. A practical introduction with examples a team lead can use this week.",
+  "answer": "Systems thinking for teams means treating results as the output of a structure (incentives, handoffs, feedback, and constraints) rather than of individual effort alone. Change the structure and the behavior changes with it.",
+  "sections": [
+    {
+      "heading": "The core idea",
+      "paragraphs": [
+        "When a team keeps missing deadlines, the instinct is to look for who dropped the ball. Systems thinking asks a different question: what about the way work flows here makes missed deadlines likely? Usually the answer is structural. Work arrives faster than it can be finished, priorities change mid-sprint, or approvals sit in one person's queue.",
+        "People inside a system tend to produce the results the system is designed for, whether anyone designed it on purpose or not."
+      ]
+    },
+    {
+      "heading": "Four things to look at",
+      "paragraphs": [
+        "You don't need diagrams or special software to start. Look at four parts of how your team works."
+      ],
+      "list": {
+        "type": "ol",
+        "items": [
+          "<strong>Flows:</strong> how work enters, moves, and leaves the team.",
+          "<strong>Feedback:</strong> how quickly people learn whether their work landed.",
+          "<strong>Incentives:</strong> what actually gets praised, measured, or punished.",
+          "<strong>Constraints:</strong> the one bottleneck that limits everything else."
+        ]
+      }
+    },
+    {
+      "heading": "Feedback loops in plain terms",
+      "paragraphs": [
+        "A reinforcing loop amplifies itself. A team that ships well earns trust, gets more autonomy, and ships even better. The same loop runs in reverse: missed deadlines lead to more oversight, which slows the team, which causes more missed deadlines.",
+        "A balancing loop pushes back toward a set point. Burnout is a common one: push a team harder and output rises for a while, then falls as people tire. Knowing which kind of loop you're in tells you whether more effort will help or hurt."
+      ]
+    },
+    {
+      "heading": "A first exercise",
+      "paragraphs": [
+        "Pick one recurring problem. Write down the last three times it happened and what came just before each one. Look for the common structural cause rather than the common person. Then change one rule, one handoff, or one measure, and watch for a month.",
+        "Small structural changes often beat big motivational pushes, because they keep working after the push fades."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is systems thinking only for large organizations?",
+      "a": "No. A team of five has flows, feedback, incentives, and constraints. Small teams often see the benefit faster because changes take effect quickly."
+    },
+    {
+      "q": "How is systems thinking different from process improvement?",
+      "a": "Process improvement optimizes a sequence of steps. Systems thinking also looks at the loops and incentives around those steps, which often explain why a fixed process drifts back to its old behavior."
+    }
+  ],
+  "related": ["constraints-as-strategy", "feedback-latency", "context-architecture"],
+  "further": {
+    "href": "https://carenella1.github.io/articles/06-systems-thinking-modern-leadership.html",
+    "label": "Systems Thinking and Modern Leadership (essay)"
+  },
+  "published": "2026-10-29"
+}

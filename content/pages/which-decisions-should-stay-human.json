@@ -1,0 +1,61 @@
+{
+  "slug": "which-decisions-should-stay-human",
+  "type": "question",
+  "title": "Which Decisions Should Stay Human When You Use AI?",
+  "seoTitle": "Which Decisions Should Stay Human When You Use AI? | Chase Arenella",
+  "description": "AI can draft, sort, and recommend, but some decisions should stay with people. A simple test for deciding which calls to keep, and why.",
+  "answer": "Keep a decision human when it involves accountability to other people, values trade-offs, situations unlike past data, or consequences that are hard to reverse. Let AI handle preparation: gathering options, drafting, and checking for gaps.",
+  "sections": [
+    {
+      "heading": "The four-part test",
+      "paragraphs": [
+        "Not every decision needs a person, and not every decision should be handed off. Ask four questions. If any answer is yes, a human should own the call, even if AI helps prepare it."
+      ],
+      "list": {
+        "type": "ol",
+        "items": [
+          "<strong>Accountability:</strong> will someone need to explain this decision to the people it affects?",
+          "<strong>Values:</strong> does it trade one thing people care about against another?",
+          "<strong>Novelty:</strong> is the situation unlike the data any model has seen?",
+          "<strong>Reversibility:</strong> would a mistake be expensive or impossible to undo?"
+        ]
+      }
+    },
+    {
+      "heading": "What AI is good for",
+      "paragraphs": [
+        "AI is strong at the work around a decision. It can lay out options you hadn't considered, summarize what's known, stress-test a plan by arguing the other side, and draft the message that explains the outcome. That preparation can make a human decision both faster and better informed.",
+        "For routine, reversible, low-stakes choices with clear rules, letting AI decide outright is often fine. Sorting tickets, scheduling, and formatting reports rarely need a person's judgment."
+      ]
+    },
+    {
+      "heading": "People decisions stay with people",
+      "paragraphs": [
+        "Hiring, promotions, performance concerns, and conflicts sit firmly on the human side. They involve accountability, values, and context no system fully sees. AI can help structure an interview or summarize feedback, but the person who will live with the result should make the call and be able to explain it.",
+        "Teams notice who actually decided. Trust drops quickly when people suspect a decision about them was outsourced."
+      ]
+    },
+    {
+      "heading": "Making the line visible",
+      "paragraphs": [
+        "Write down which decisions in your team are AI-assisted and which are AI-decided, and share the list. It removes guesswork, makes review easier, and gives people a clear place to push back. Revisit it every few months as tools improve and as you learn where your lines were in the wrong place."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What does human in the loop mean?",
+      "a": "A setup where a person reviews or approves AI output before it takes effect. It's the middle ground between AI suggesting and AI deciding."
+    },
+    {
+      "q": "Is it risky to let AI make any decisions?",
+      "a": "The risk scales with stakes and reversibility. Low-stakes, easily reversed decisions with clear rules are reasonable to delegate, as long as someone reviews the results periodically."
+    }
+  ],
+  "related": ["what-is-ai-augmented-leadership", "how-to-run-a-decision-log", "signal-vs-noise"],
+  "further": {
+    "href": "https://carenella1.github.io/articles/13-ai-augmented-doesn-t-mean-ai-automated.html",
+    "label": "AI-Augmented Doesn't Mean AI-Automated (essay)"
+  },
+  "published": "2026-10-29"
+}
