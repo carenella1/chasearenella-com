@@ -6,7 +6,7 @@ A field guide: short reference pages on decision-making, systems thinking, and A
 
 - `content/pages/*.json` is one guide per file. `content/site.json` holds the site name and outbound links.
 - `node scripts/build.js` renders the HTML at `/<slug>/`, plus the home, about, and 404 pages, `sitemap.xml`, and `robots.txt`. The output is committed.
-- `.github/workflows/write-page.yml` runs on the 1st and 15th of each month. It writes the next topic from `content/queue.json` with `scripts/write-page.js`, rebuilds the site, and opens a PR to review.
+- `.github/workflows/write-page.yml` runs every Monday at 07:00 UTC. It writes the next topic from `content/queue.json` with `scripts/write-page.js`, rebuilds the site, and opens a PR to review.
 
 ## Rules every page must pass
 

@@ -118,6 +118,12 @@ function mockDraft(item, pages) {
   });
 }
 
+// One topic per line, so a run's diff shows only the item it marked used.
+function formatQueue(queue) {
+  const line = (q) => `  { ${Object.entries(q).map(([k, v]) => `${JSON.stringify(k)}: ${JSON.stringify(v)}`).join(", ")} }`;
+  return `[\n${queue.map(line).join(",\n")}\n]\n`;
+}
+
 function extractJson(text) {
   const fenced = text.match(/```(?:json)?\s*([\s\S]*?)```/);
   return JSON.parse((fenced ? fenced[1] : text).trim());
@@ -176,7 +182,7 @@ async function main() {
     }
     fs.writeFileSync(path.join(PAGES_DIR, `${page.slug}.json`), JSON.stringify(page, null, 2) + "\n");
     item.used = new Date().toISOString();
-    fs.writeFileSync(QUEUE, JSON.stringify(queue, null, 2) + "\n");
+    fs.writeFileSync(QUEUE, formatQueue(queue));
     console.log(`Wrote content/pages/${page.slug}.json ("${page.title}", ${wordCount(bodyText(page))} words).`);
     return;
   }

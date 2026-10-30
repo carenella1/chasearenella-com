@@ -235,7 +235,7 @@ function renderAbout() {
 <p class="lede">${esc(site.personDescription)}</p>
 <section>
 <h2>What this site is</h2>
-<p>This is a reference shelf. Every page covers one concept or answers one question, in plain language, with enough depth to use it the same day. New guides are added twice a month.</p>
+<p>This is a reference shelf. Every page covers one concept or answers one question, in plain language, with enough depth to use it the same day. New guides are added every week.</p>
 <p>The guides lean on three sources: agile delivery, where teams learn by shipping in short cycles; systems thinking, which looks at how structure drives behavior; and competitive gaming, which turns decision-making under pressure into something you can practice and review.</p>
 </section>
 <section>
