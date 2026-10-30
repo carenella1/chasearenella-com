@@ -1,123 +1,56 @@
 [
-  {
-    "id": "psychological-safety-in-fast-teams",
-    "type": "question",
-    "angle": "What is psychological safety, and why do fast-moving teams need it more than slow ones?",
-    "used": "2026-10-30T15:06:31.600Z"
-  },
-  {
-    "id": "blameless-retrospectives",
-    "type": "concept",
-    "angle": "Blameless retrospectives: how to review what went wrong without assigning blame, and the structure that keeps them honest"
-  },
-  {
-    "id": "reversible-vs-irreversible-decisions",
-    "type": "concept",
-    "angle": "One-way and two-way door decisions: sorting choices by reversibility to decide how much process each deserves"
-  },
-  {
-    "id": "ai-prompt-framing-for-leaders",
-    "type": "question",
-    "angle": "How should leaders frame questions to AI tools to get useful answers instead of generic ones?"
-  },
-  {
-    "id": "wip-limits",
-    "type": "concept",
-    "angle": "Work-in-progress limits: what they are, why they speed teams up, and how to set the first one"
-  },
-  {
-    "id": "second-order-thinking",
-    "type": "concept",
-    "angle": "Second-order thinking: asking and then what? before making a decision, with team-level examples"
-  },
-  {
-    "id": "how-to-run-a-weekly-review",
-    "type": "question",
-    "angle": "How do you run a fifteen-minute weekly team review that actually changes decisions?"
-  },
-  {
-    "id": "callouts-team-communication",
-    "type": "concept",
-    "angle": "Callouts: the competitive-gaming habit of short, specific, actionable communication, applied to meetings and incidents"
-  },
-  {
-    "id": "bottlenecks-theory-of-constraints",
-    "type": "concept",
-    "angle": "Bottlenecks: why improving anything other than the constraint does little, explained for team leads"
-  },
-  {
-    "id": "verify-ai-output",
-    "type": "question",
-    "angle": "How do you decide which AI outputs to trust and which to verify?"
-  },
-  {
-    "id": "role-clarity-in-teams",
-    "type": "concept",
-    "angle": "Role clarity: why teams freeze under pressure when nobody knows who makes the final call, and how to fix it before it matters"
-  },
-  {
-    "id": "premortems",
-    "type": "concept",
-    "angle": "Premortems: imagining a project has already failed to find the risks nobody wants to say out loud"
-  },
-  {
-    "id": "what-is-an-operating-cadence",
-    "type": "question",
-    "angle": "What is an operating cadence, and how should a small team choose its rhythm of planning and review?"
-  },
-  {
-    "id": "leading-vs-lagging-indicators",
-    "type": "concept",
-    "angle": "Leading vs. lagging indicators: choosing measures that warn you early instead of grading you late"
-  },
-  {
-    "id": "attention-as-a-resource",
-    "type": "concept",
-    "angle": "Attention as a leadership resource: budgeting focus the way teams budget time and money"
-  },
-  {
-    "id": "what-makes-a-good-decision",
-    "type": "question",
-    "angle": "What makes a decision good if the outcome can be bad? Separating decision quality from results"
-  },
-  {
-    "id": "async-communication",
-    "type": "concept",
-    "angle": "Asynchronous communication: when written updates beat meetings, and how to write them so they get read"
-  },
-  {
-    "id": "scouting-and-information-gathering",
-    "type": "concept",
-    "angle": "Scouting: the gaming habit of spending small effort to gather information before committing, applied to product and project decisions"
-  },
-  {
-    "id": "ai-meeting-notes-to-decisions",
-    "type": "question",
-    "angle": "How can AI turn meeting notes into decisions, owners, and dates without losing nuance?"
-  },
-  {
-    "id": "sunk-cost-on-teams",
-    "type": "concept",
-    "angle": "The sunk cost trap on teams: why projects keep going after they should stop, and the rules that make stopping easier"
-  },
-  {
-    "id": "how-to-set-team-priorities",
-    "type": "question",
-    "angle": "How should a team lead set priorities when everything is labeled urgent?"
-  },
-  {
-    "id": "adaptive-planning",
-    "type": "concept",
-    "angle": "Adaptive planning: planning in short horizons with clear checkpoints instead of fixed long-range roadmaps"
-  },
-  {
-    "id": "practice-vs-performance",
-    "type": "concept",
-    "angle": "Practice vs. performance: what esports training routines teach about building skill deliberately at work"
-  },
-  {
-    "id": "what-is-a-team-operating-system",
-    "type": "question",
-    "angle": "What is a team operating system, and what are its minimum parts?"
-  }
+  { "id": "psychological-safety-in-fast-teams", "type": "question", "angle": "What is psychological safety, and why do fast-moving teams need it more than slow ones?", "used": "2026-10-30T15:06:31.600Z" },
+  { "id": "blameless-retrospectives", "type": "concept", "angle": "Blameless retrospectives: how to review what went wrong without assigning blame, and the structure that keeps them honest" },
+  { "id": "reversible-vs-irreversible-decisions", "type": "concept", "angle": "One-way and two-way door decisions: sorting choices by reversibility to decide how much process each deserves" },
+  { "id": "ai-prompt-framing-for-leaders", "type": "question", "angle": "How should leaders frame questions to AI tools to get useful answers instead of generic ones?" },
+  { "id": "wip-limits", "type": "concept", "angle": "Work-in-progress limits: what they are, why they speed teams up, and how to set the first one" },
+  { "id": "second-order-thinking", "type": "concept", "angle": "Second-order thinking: asking and then what? before making a decision, with team-level examples" },
+  { "id": "how-to-run-a-weekly-review", "type": "question", "angle": "How do you run a fifteen-minute weekly team review that actually changes decisions?" },
+  { "id": "callouts-team-communication", "type": "concept", "angle": "Callouts: the competitive-gaming habit of short, specific, actionable communication, applied to meetings and incidents" },
+  { "id": "bottlenecks-theory-of-constraints", "type": "concept", "angle": "Bottlenecks: why improving anything other than the constraint does little, explained for team leads" },
+  { "id": "verify-ai-output", "type": "question", "angle": "How do you decide which AI outputs to trust and which to verify?" },
+  { "id": "role-clarity-in-teams", "type": "concept", "angle": "Role clarity: why teams freeze under pressure when nobody knows who makes the final call, and how to fix it before it matters" },
+  { "id": "premortems", "type": "concept", "angle": "Premortems: imagining a project has already failed to find the risks nobody wants to say out loud" },
+  { "id": "what-is-an-operating-cadence", "type": "question", "angle": "What is an operating cadence, and how should a small team choose its rhythm of planning and review?" },
+  { "id": "leading-vs-lagging-indicators", "type": "concept", "angle": "Leading vs. lagging indicators: choosing measures that warn you early instead of grading you late" },
+  { "id": "attention-as-a-resource", "type": "concept", "angle": "Attention as a leadership resource: budgeting focus the way teams budget time and money" },
+  { "id": "what-makes-a-good-decision", "type": "question", "angle": "What makes a decision good if the outcome can be bad? Separating decision quality from results" },
+  { "id": "async-communication", "type": "concept", "angle": "Asynchronous communication: when written updates beat meetings, and how to write them so they get read" },
+  { "id": "scouting-and-information-gathering", "type": "concept", "angle": "Scouting: the gaming habit of spending small effort to gather information before committing, applied to product and project decisions" },
+  { "id": "ai-meeting-notes-to-decisions", "type": "question", "angle": "How can AI turn meeting notes into decisions, owners, and dates without losing nuance?" },
+  { "id": "sunk-cost-on-teams", "type": "concept", "angle": "The sunk cost trap on teams: why projects keep going after they should stop, and the rules that make stopping easier" },
+  { "id": "how-to-set-team-priorities", "type": "question", "angle": "How should a team lead set priorities when everything is labeled urgent?" },
+  { "id": "adaptive-planning", "type": "concept", "angle": "Adaptive planning: planning in short horizons with clear checkpoints instead of fixed long-range roadmaps" },
+  { "id": "practice-vs-performance", "type": "concept", "angle": "Practice vs. performance: what esports training routines teach about building skill deliberately at work" },
+  { "id": "what-is-a-team-operating-system", "type": "question", "angle": "What is a team operating system, and what are its minimum parts?" },
+  { "id": "cognitive-load-on-teams", "type": "concept", "angle": "Cognitive load on teams: why overloaded teams make worse decisions, and how structure (not effort) reduces the load" },
+  { "id": "introducing-ai-to-a-team", "type": "question", "angle": "How do you introduce AI tools to a team without creating fear, confusion, or a pile of unused subscriptions?" },
+  { "id": "tempo", "type": "concept", "angle": "Tempo: the strategy-game idea of forcing the other side to react, applied to staying proactive instead of reactive at work" },
+  { "id": "fixes-that-fail", "type": "concept", "angle": "Fixes that fail: the systems pattern where a quick fix relieves a problem now and makes it worse later, with team examples" },
+  { "id": "how-to-write-a-decision-memo", "type": "question", "angle": "How do you write a one-page decision memo that gets a fast, clear answer from a busy leader?" },
+  { "id": "small-batches", "type": "concept", "angle": "Small batches: why shipping smaller pieces of work lowers risk, shortens feedback, and speeds learning" },
+  { "id": "what-sports-coaching-teaches-managers", "type": "question", "angle": "What can sports coaching teach managers about developing people instead of just directing them?" },
+  { "id": "prompt-libraries-for-teams", "type": "concept", "angle": "Prompt libraries: turning one-off AI prompts into shared, reviewed routines a whole team can rely on" },
+  { "id": "goodharts-law", "type": "concept", "angle": "Goodhart's law: what happens when a measure becomes a target, and how teams avoid gaming their own metrics" },
+  { "id": "how-to-say-no-to-stakeholders", "type": "question", "angle": "How do you say no to a stakeholder request without damaging the relationship or the roadmap?" },
+  { "id": "game-sense", "type": "concept", "angle": "Game sense: the gaming idea of reading a situation quickly and intuitively, and how teams build it through repetition and review" },
+  { "id": "delegation-levels", "type": "concept", "angle": "Levels of delegation: matching how much authority you hand off to the decision, the risk, and the person" },
+  { "id": "ai-hallucinations-for-managers", "type": "question", "angle": "What should managers know about AI hallucinations before relying on AI-written summaries and reports?" },
+  { "id": "stocks-and-flows", "type": "concept", "angle": "Stocks and flows: a simple systems-thinking model for understanding backlogs, hiring pipelines, and burnout" },
+  { "id": "one-on-ones", "type": "question", "angle": "What should a manager cover in a weekly one-on-one so it is more than a status update?" },
+  { "id": "cooldowns", "type": "concept", "angle": "Cooldowns: the gaming idea that powerful abilities need recovery time, applied to team energy and recurring big pushes" },
+  { "id": "what-is-a-north-star-metric", "type": "question", "angle": "What is a north star metric, and how does a team pick one that guides daily decisions?" },
+  { "id": "handoffs", "type": "concept", "angle": "Handoffs: why work slows down and errors multiply at every handoff, and how to design fewer, cleaner ones" },
+  { "id": "ai-and-junior-staff", "type": "question", "angle": "How does AI change the way junior team members learn the job, and what should leaders do about it?" },
+  { "id": "bench-depth", "type": "concept", "angle": "Bench depth: why teams that depend on one star break under pressure, and how to build redundancy without slowing down" },
+  { "id": "definition-of-done", "type": "concept", "angle": "Definition of done: why teams that agree on what finished means ship faster and argue less" },
+  { "id": "feedback-that-changes-behavior", "type": "question", "angle": "How do you give feedback that actually changes behavior instead of just being heard?" },
+  { "id": "shifting-the-burden", "type": "concept", "angle": "Shifting the burden: the systems pattern where a team comes to depend on a workaround instead of fixing the root cause" },
+  { "id": "economy-management", "type": "concept", "angle": "Economy management: how strategy games teach spending now versus investing for later, applied to team capacity and budgets" },
+  { "id": "measuring-ai-impact", "type": "question", "angle": "How do you measure whether AI tools are actually making a team better, not just busier?" },
+  { "id": "escalation-paths", "type": "concept", "angle": "Escalation paths: deciding in advance how problems move up, so urgent issues get attention without everything becoming urgent" },
+  { "id": "what-is-a-team-working-agreement", "type": "question", "angle": "What is a team working agreement, what should it include, and how do you keep it alive?" },
+  { "id": "calibrated-confidence", "type": "concept", "angle": "Calibrated confidence: stating forecasts and estimates as probabilities so plans can be checked and judgment improves" },
+  { "id": "ai-assisted-research-for-decisions", "type": "question", "angle": "How can a leader use AI to research a decision quickly without being misled by confident but wrong answers?" },
+  { "id": "how-to-recover-a-late-project", "type": "question", "angle": "How do you recover a project that is already late without burning out the team?" }
 ]
