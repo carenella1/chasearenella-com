@@ -1,0 +1,75 @@
+{
+  "slug": "psychological-safety-in-fast-teams",
+  "type": "question",
+  "title": "What Is Psychological Safety, and Why Do Fast-Moving Teams Need It More?",
+  "seoTitle": "What Is Psychological Safety? Why Fast Teams Need It | Chase Arenella",
+  "description": "Psychological safety is the confidence to speak up without being punished. Learn why fast teams depend on it and how to build it with four habits.",
+  "answer": "Psychological safety is the shared belief that people can raise concerns, ask questions, and admit mistakes without being punished or embarrassed. Fast-moving teams need more of it because speed multiplies the cost of hidden errors and silent doubt.",
+  "sections": [
+    {
+      "heading": "What psychological safety means",
+      "paragraphs": [
+        "<strong>Psychological safety</strong> is a team condition. People believe they will not be punished or embarrassed for raising a concern, asking a question, admitting a mistake, or disagreeing. It describes how a team treats risk in conversation.",
+        "It is not comfort. It does not mean low standards, constant agreement, or avoiding hard feedback. A safe team can be demanding. The difference is that bad news travels quickly toward the people who can act on it."
+      ]
+    },
+    {
+      "heading": "Why fast teams need more of it",
+      "paragraphs": [
+        "Speed shortens the time available to catch errors. A slow team has gates, reviews, and long gaps where problems surface on their own. A fast team ships, tests, and changes direction often, so it depends on people to flag problems early.",
+        "<strong>Silence is expensive at speed.</strong> A doubt kept private for one day can become a week of wrong work. Competitive gaming shows this clearly. A player who calls out a misplay immediately lets the team adjust in the same round. A player who hides it costs the team the next three."
+      ]
+    },
+    {
+      "heading": "Signs it is missing",
+      "paragraphs": [
+        "Low safety rarely looks like conflict. It looks like quiet."
+      ],
+      "list": {
+        "type": "ul",
+        "items": [
+          "Meetings end in agreement, then the real objections appear in private chats.",
+          "Mistakes are found by customers or managers, not by the people who made them.",
+          "Questions come mostly from the most senior or most secure person.",
+          "Retrospectives produce polite, vague action items that repeat every cycle."
+        ]
+      }
+    },
+    {
+      "heading": "How to build it this week",
+      "paragraphs": [
+        "Leaders set the tone through small, repeated behaviors. Track one measure as you go: how soon problems get reported. If the gap between a problem starting and someone naming it shrinks, safety is improving.",
+        "Start with these four habits."
+      ],
+      "list": {
+        "type": "ol",
+        "items": [
+          "<strong>Go first.</strong> Name a mistake you made and what you changed because of it.",
+          "<strong>Reward the flag.</strong> Thank people who surface problems, publicly, before asking whose fault it was.",
+          "<strong>Review the system, not the person.</strong> Ask what the process allowed, not who failed.",
+          "<strong>Ask for dissent directly.</strong> \"What would make this plan fail?\" gets more than \"Any questions?\""
+        ]
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is psychological safety the same as being nice?",
+      "a": "No. It is about whether people can speak honestly without penalty. Safe teams often give more direct feedback, not less."
+    },
+    {
+      "q": "How do you measure psychological safety?",
+      "a": "Ask short anonymous questions, such as whether people can raise a problem without being punished. Then watch how quickly problems get reported."
+    }
+  ],
+  "related": [
+    "feedback-latency",
+    "tilt-management",
+    "decision-loops"
+  ],
+  "further": {
+    "href": "https://carenella1.github.io/articles/09-decision-loops-under-pressure.html",
+    "label": "Decision Loops Under Pressure: What Competitive Gaming Teaches AI-Augmented Leadership (essay)"
+  },
+  "published": "2026-10-30"
+}
