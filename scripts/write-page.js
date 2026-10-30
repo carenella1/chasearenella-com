@@ -66,6 +66,7 @@ ${further}
 CONSTRAINTS:
 - Body word count (answer + all section paragraphs and list items + FAQ answers): ${MIN_WORDS + 70}-${MAX_WORDS - 50} words.
 - 4 sections, each with a heading and 1-2 paragraphs. At most 2 sections include a list (3-5 items).
+- A section's list is always shown AFTER all of its paragraphs. So the last paragraph of a section with a list must lead into the list, and no paragraph may refer to text that comes after the list.
 - 2 FAQs: short questions people actually search, each answered in 1-2 sentences.
 - "answer": ${answerLabel}. It is shown in a highlighted box at the top.
 - "description": under 155 characters, plain text.
