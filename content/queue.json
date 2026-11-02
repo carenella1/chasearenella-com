@@ -1,6 +1,6 @@
 [
   { "id": "psychological-safety-in-fast-teams", "type": "question", "angle": "What is psychological safety, and why do fast-moving teams need it more than slow ones?", "used": "2026-10-30T15:06:31.600Z" },
-  { "id": "blameless-retrospectives", "type": "concept", "angle": "Blameless retrospectives: how to review what went wrong without assigning blame, and the structure that keeps them honest" },
+  { "id": "blameless-retrospectives", "type": "concept", "angle": "Blameless retrospectives: how to review what went wrong without assigning blame, and the structure that keeps them honest", "used": "2026-11-02T16:53:33.566Z" },
   { "id": "reversible-vs-irreversible-decisions", "type": "concept", "angle": "One-way and two-way door decisions: sorting choices by reversibility to decide how much process each deserves" },
   { "id": "ai-prompt-framing-for-leaders", "type": "question", "angle": "How should leaders frame questions to AI tools to get useful answers instead of generic ones?" },
   { "id": "wip-limits", "type": "concept", "angle": "Work-in-progress limits: what they are, why they speed teams up, and how to set the first one" },
