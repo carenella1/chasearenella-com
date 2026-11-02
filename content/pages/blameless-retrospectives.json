@@ -1,0 +1,67 @@
+{
+  "slug": "blameless-retrospectives",
+  "type": "concept",
+  "title": "Blameless Retrospectives",
+  "seoTitle": "Blameless Retrospectives: Review Failure Without Blame | Chase Arenella",
+  "description": "How to review what went wrong without blame, and the five-step structure that keeps a blameless retrospective honest.",
+  "answer": "A blameless retrospective is a structured review of a failure that asks how the system allowed it, not who caused it. The goal is to find fixes that work no matter who is on the team.",
+  "sections": [
+    {
+      "heading": "What blameless actually means",
+      "paragraphs": [
+        "Blameless does not mean nobody is accountable. It means separating <strong>accountability</strong> from <strong>blame</strong>. Accountability asks who will own the fix. Blame asks who should feel bad. Only the first improves the team.",
+        "People act on the information, tools, and incentives in front of them. If one person's slip can cause a failure, the system had no safeguard. That is the finding. Ask what the system made easy and what it made hard. 'Human error' is where the review starts, not where it ends."
+      ]
+    },
+    {
+      "heading": "Why blame makes reviews dishonest",
+      "paragraphs": [
+        "When a review ends in punishment, people learn to hide things. They soften timelines, skip the shortcut they took, and stay quiet about near misses. The team loses the exact data it needs. In competitive gaming, a squad that dreads replay review stops calling out its own misplays, and the same errors repeat.",
+        "Honesty is a function of cost. Lower the cost of saying 'I made that call,' and the team gets more accurate information, sooner. Accurate information is what makes the next decision better. A review that protects feelings but hides facts has no value."
+      ]
+    },
+    {
+      "heading": "The structure that keeps it honest",
+      "paragraphs": [
+        "Good intentions fade under pressure. Structure holds. Hold the review within a week, while details are fresh, and keep it to 60 to 90 minutes. Use the same steps, in the same order, every time:"
+      ],
+      "list": {
+        "type": "ol",
+        "items": [
+          "<strong>Facts first.</strong> Build a timeline from logs and messages before anyone interprets it.",
+          "<strong>Ask what and how.</strong> 'What did you see?' works. 'Why did you do that?' invites defense.",
+          "<strong>Name contributing factors.</strong> Look across process, tools, and information instead of hunting one root cause.",
+          "<strong>Fix the system.</strong> Write actions aimed at safeguards, not at reminding people to be careful.",
+          "<strong>Assign owners and dates.</strong> Every action gets one name and one deadline."
+        ]
+      }
+    },
+    {
+      "heading": "How blameless reviews fail",
+      "paragraphs": [
+        "Blame returns through language. Words like 'careless' or 'should have' turn a review into a verdict. Leaders also kill honesty by speaking first, because their view becomes the frame everyone else defends or echoes.",
+        "Fix both. Speak last, and go first on your own mistakes. Then check the action list at the next review. A retrospective with no follow-up teaches the team that the exercise is theater. Publish the notes so other teams can learn from them too."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does blameless mean no consequences?",
+      "a": "No. Blameless removes punishment for honest mistakes, but repeated disregard of agreed safeguards is a pattern and gets handled separately."
+    },
+    {
+      "q": "How long should a blameless retrospective take?",
+      "a": "Sixty to ninety minutes fits most incidents. Smaller misses can be reviewed in about 20 minutes."
+    }
+  ],
+  "related": [
+    "psychological-safety-in-fast-teams",
+    "decision-loops",
+    "how-to-run-a-decision-log"
+  ],
+  "further": {
+    "href": "https://carenella1.github.io/articles/09-decision-loops-under-pressure.html",
+    "label": "Decision Loops Under Pressure: What Competitive Gaming Teaches AI-Augmented Leadership (essay)"
+  },
+  "published": "2026-11-02"
+}
