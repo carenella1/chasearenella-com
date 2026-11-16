@@ -1,0 +1,24 @@
+name: Ping Search Engines
+
+# After each deploy, submit the sitemap's URLs to IndexNow. Merges made by
+# the Auto-merge workflow use github.token, which doesn't fire push triggers,
+# so that workflow starts this one explicitly.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+
+      - name: Submit URLs to IndexNow
+        run: node scripts/ping-search-engines.js

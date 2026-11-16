@@ -1,0 +1,11 @@
+{
+  "name": "chasearenella-com",
+  "private": true,
+  "description": "Static field guide served by GitHub Pages. See README.md.",
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "2.6.2"
+  }
+}

@@ -1,11 +1,12 @@
 // Renders the whole site from content/: the home page, one page per guide at
-// /<slug>/, the about page, 404, sitemap.xml and robots.txt. Output is
-// committed and served as-is by GitHub Pages.
+// /<slug>/, a title-card image per guide, the about page, 404, sitemap.xml and
+// robots.txt. Output is committed and served as-is by GitHub Pages.
 //
 // Run: node scripts/build.js
 const fs = require("fs");
 const path = require("path");
 const { ROOT, readJson, loadPages, bodyText, wordCount, checkPage } = require("./lib/content");
+const cards = require("./lib/cards");
 
 const site = readJson(path.join(ROOT, "content", "site.json"));
 const PERSON_ID = `${site.url}/#person`;
@@ -18,6 +19,42 @@ function esc(s) {
 
 function pageUrl(slug) {
   return `${site.url}/${slug}/`;
+}
+
+// Image files are named for the brand so they rank in image search too.
+function guideImage(page) {
+  return {
+    file: `assets/images/chase-arenella-${page.slug}.png`,
+    alt: `${page.title}: a Chase Arenella field guide ${page.type === "question" ? "answer" : "entry"}`,
+    label: page.type === "question" ? "Question" : "Concept",
+    title: page.title,
+    seed: page.slug,
+  };
+}
+
+const HOME_IMAGE = {
+  file: "assets/images/chase-arenella-field-guide.png",
+  alt: "Chase Arenella field guide to decisions, systems, and AI-augmented leadership",
+  label: "Reference",
+  title: "Decisions, Systems & AI-Augmented Leadership",
+  seed: "home",
+};
+
+function imageUrl(img) {
+  return `${site.url}/${img.file}`;
+}
+
+function imageNode(img) {
+  return {
+    "@type": "ImageObject",
+    "@id": `${imageUrl(img)}#image`,
+    url: imageUrl(img),
+    contentUrl: imageUrl(img),
+    width: cards.W,
+    height: cards.H,
+    caption: img.alt,
+    creator: { "@id": PERSON_ID },
+  };
 }
 
 function personNode() {
@@ -50,7 +87,15 @@ function breadcrumbs(items) {
   };
 }
 
-function layout({ title, description, canonical, schema, body, ogType = "website" }) {
+function layout({ title, description, canonical, schema, body, ogType = "website", image }) {
+  const imageMeta = image
+    ? `<meta property="og:image" content="${imageUrl(image)}">
+<meta property="og:image:width" content="${cards.W}">
+<meta property="og:image:height" content="${cards.H}">
+<meta property="og:image:alt" content="${esc(image.alt)}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="${imageUrl(image)}">`
+    : `<meta name="twitter:card" content="summary">`;
   const graph = JSON.stringify({ "@context": "https://schema.org", "@graph": schema }, null, 2);
   return `<!doctype html>
 <html lang="en">
@@ -65,7 +110,7 @@ function layout({ title, description, canonical, schema, body, ogType = "website
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:url" content="${canonical}">
 <meta property="og:site_name" content="${esc(site.siteName)}">
-<meta name="twitter:card" content="summary">
+${imageMeta}
 <link rel="stylesheet" href="/assets/style.css">
 <script type="application/ld+json">
 ${graph}
@@ -109,6 +154,7 @@ function renderSection(s) {
 
 function renderGuide(page, bySlug) {
   const url = pageUrl(page.slug);
+  const image = guideImage(page);
   const updated = page.updated || page.published;
   const minutes = Math.max(2, Math.round(wordCount(bodyText(page)) / 220));
   const related = (page.related || []).map((s) => bySlug.get(s)).filter(Boolean);
@@ -135,6 +181,7 @@ function renderGuide(page, bySlug) {
 <p class="label">${page.type === "question" ? "Short answer" : "In one line"}</p>
 <p>${page.answer}</p>
 </div>
+<figure class="card"><img src="/${image.file}" alt="${esc(image.alt)}" width="${cards.W}" height="${cards.H}" loading="lazy"></figure>
 ${page.sections.map(renderSection).join("\n")}
 ${faqs}
 ${further}
@@ -153,10 +200,12 @@ ${relatedHtml}`;
       publisher: { "@id": PERSON_ID },
       datePublished: page.published,
       dateModified: updated,
+      image: { "@id": `${imageUrl(image)}#image` },
       mainEntityOfPage: url,
       isPartOf: { "@id": WEBSITE_ID },
       inLanguage: "en-US",
     },
+    imageNode(image),
     breadcrumbs([
       ["Field Guide", `${site.url}/`],
       [page.title, url],
@@ -170,6 +219,7 @@ ${relatedHtml}`;
     schema,
     body,
     ogType: "article",
+    image,
   });
 }
 
@@ -217,8 +267,10 @@ ${guideList(questions)}
       description: site.description,
       about: { "@id": PERSON_ID },
       isPartOf: { "@id": WEBSITE_ID },
+      primaryImageOfPage: { "@id": `${imageUrl(HOME_IMAGE)}#image` },
       hasPart: pages.map((p) => ({ "@id": `${pageUrl(p.slug)}#article` })),
     },
+    imageNode(HOME_IMAGE),
   ];
   return layout({
     title: `${site.name} | Field Guide to Decisions, Systems & AI-Augmented Leadership`,
@@ -226,6 +278,7 @@ ${guideList(questions)}
     canonical: `${site.url}/`,
     schema,
     body,
+    image: HOME_IMAGE,
   });
 }
 
@@ -259,7 +312,7 @@ ${site.elsewhere.map((e) => `  <li><a href="${e.href}" rel="noopener">${esc(e.la
       ["About", url],
     ]),
   ];
-  return layout({ title: `About | ${site.name}`, description: site.personDescription, canonical: url, schema, body });
+  return layout({ title: `About | ${site.name}`, description: site.personDescription, canonical: url, schema, body, image: HOME_IMAGE });
 }
 
 function render404() {
@@ -275,13 +328,17 @@ function render404() {
 function renderSitemap(pages) {
   const latest = pages.map((p) => p.updated || p.published).sort().pop();
   const urls = [
-    [`${site.url}/`, latest],
+    [`${site.url}/`, latest, HOME_IMAGE],
     [`${site.url}/about/`, latest],
-    ...pages.map((p) => [pageUrl(p.slug), p.updated || p.published]),
+    ...pages.map((p) => [pageUrl(p.slug), p.updated || p.published, guideImage(p)]),
   ];
+  const entry = ([loc, lastmod, img]) =>
+    img
+      ? `  <url><loc>${loc}</loc><lastmod>${lastmod}</lastmod><image:image><image:loc>${imageUrl(img)}</image:loc></image:image></url>`
+      : `  <url><loc>${loc}</loc><lastmod>${lastmod}</lastmod></url>`;
   return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map(([loc, lastmod]) => `  <url><loc>${loc}</loc><lastmod>${lastmod}</lastmod></url>`).join("\n")}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+${urls.map(entry).join("\n")}
 </urlset>
 `;
 }
@@ -290,6 +347,14 @@ function write(rel, content) {
   const file = path.join(ROOT, rel);
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, content);
+}
+
+// Rewrites a card only when its pixels change, so rebuilds don't churn git.
+function writeCard(img) {
+  const png = cards.renderCard(img);
+  const file = path.join(ROOT, img.file);
+  if (fs.existsSync(file) && fs.readFileSync(file).equals(png)) return;
+  write(img.file, png);
 }
 
 function main() {
@@ -307,13 +372,26 @@ function main() {
     process.exit(1);
   }
 
-  for (const p of pages) write(`${p.slug}/index.html`, renderGuide(p, bySlug));
+  for (const p of pages) {
+    writeCard(guideImage(p));
+    write(`${p.slug}/index.html`, renderGuide(p, bySlug));
+  }
+  writeCard(HOME_IMAGE);
   write("index.html", renderHome(pages));
   write("about/index.html", renderAbout());
   write("404.html", render404());
   write("sitemap.xml", renderSitemap(pages));
+  // Read by carenella1.github.io to link each essay to the guides built on it.
+  write("guides.json", `${JSON.stringify(
+    pages
+      .slice()
+      .sort((a, b) => a.slug.localeCompare(b.slug))
+      .map((p) => ({ url: pageUrl(p.slug), title: p.title, image: imageUrl(guideImage(p)), essay: p.further ? p.further.href : null })),
+    null,
+    2
+  )}\n`);
   write("robots.txt", `User-agent: *\nAllow: /\nDisallow: /content/\nDisallow: /scripts/\n\nSitemap: ${site.url}/sitemap.xml\n`);
-  console.log(`Built ${pages.length} guides, home, about, 404, sitemap.`);
+  console.log(`Built ${pages.length} guides and their cards, home, about, 404, sitemap.`);
 }
 
 main();

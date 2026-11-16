@@ -50,6 +50,8 @@ h2 { font-size: 25px; margin: 40px 0 10px; }
 .answer p { margin: 0; }
 .answer .label { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
 .guide li { margin: 6px 0; }
+.card { margin: 28px 0 8px; }
+.card img { display: block; width: 100%; height: auto; border-radius: 8px; }
 
 .faqs details { border-top: 1px solid var(--border); padding: 12px 0; }
 .faqs details:last-child { border-bottom: 1px solid var(--border); }

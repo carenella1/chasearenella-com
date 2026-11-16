@@ -1,0 +1,46 @@
+name: Auto-merge Guides
+
+# Publishes each Write Page PR after a 72-hour review window, so a guide that
+# nobody gets to still goes live and the next Monday run isn't blocked.
+# To keep a PR from merging, add the "hold" label or request changes.
+on:
+  schedule:
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Merge auto-page PRs older than 72h with no hold/changes-requested
+        # No checkout in this job, so gh needs GH_REPO to know which repo to
+        # act on. shell: bash adds pipefail, so a failing `gh pr list` fails
+        # the step instead of feeding the loop nothing.
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          MERGED=0
+          PRS=$(gh pr list --label auto-page --state open --json number,createdAt,labels,reviewDecision \
+            --jq '.[] | select(.reviewDecision != "CHANGES_REQUESTED") | select([.labels[].name] | index("hold") | not) | "\(.number) \(.createdAt)"')
+          while read -r num created; do
+            [ -z "$num" ] && continue
+            AGE_HOURS=$(( ($(date +%s) - $(date -d "$created" +%s)) / 3600 ))
+            if [ "$AGE_HOURS" -ge 72 ]; then
+              echo "PR #$num is ${AGE_HOURS}h old; merging."
+              gh pr merge "$num" --squash --delete-branch
+              MERGED=1
+            else
+              echo "PR #$num is only ${AGE_HOURS}h old; waiting (needs 72h)."
+            fi
+          done <<< "$PRS"
+
+          if [ "$MERGED" -eq 1 ]; then
+            gh workflow run search-ping.yml --ref main
+          fi
