@@ -1,0 +1,74 @@
+{
+  "slug": "reversible-vs-irreversible-decisions",
+  "type": "concept",
+  "title": "One-Way and Two-Way Door Decisions",
+  "seoTitle": "One-Way and Two-Way Door Decisions | Chase Arenella",
+  "description": "Sort decisions by how easily they can be reversed, then give each one the right amount of process. A short guide to one-way and two-way doors.",
+  "answer": "A one-way door decision is hard or costly to undo. A two-way door decision can be reversed cheaply. Sorting choices this way tells you how much process each one deserves.",
+  "sections": [
+    {
+      "heading": "The two doors",
+      "paragraphs": [
+        "A <strong>two-way door</strong> is a choice you can walk back through. If it goes badly, you reverse it, and the cost is small. A <strong>one-way door</strong> is a choice that is hard, expensive, or impossible to undo. Once you are through, you live with the result.",
+        "Most decisions are two-way doors. Teams often treat them like one-way doors anyway, so they add reviews, meetings, and sign-offs to choices that a quick test would settle. The goal is not to decide faster everywhere. It is to spend process where it buys something."
+      ]
+    },
+    {
+      "heading": "How to sort a choice",
+      "paragraphs": [
+        "Reversibility is a matter of degree, so ask a few direct questions before you pick a process. Answer them in order and stop when you have a clear read."
+      ],
+      "list": {
+        "type": "ol",
+        "items": [
+          "What does it cost to undo this, in money, time, and trust?",
+          "How long until we would know it was wrong?",
+          "Who else is affected, and can they absorb a reversal?",
+          "Can we shrink it into a smaller, reversible version first?"
+        ]
+      }
+    },
+    {
+      "heading": "Matching process to the door",
+      "paragraphs": [
+        "For two-way doors, name one owner, set a short deadline, and decide with the information at hand. Write down what would make you reverse it. Then act. A wrong call you catch in a week costs less than a right call you reach in a month.",
+        "For one-way doors, slow down on purpose. Gather outside views, ask someone to argue the opposite case, and record the reasoning in a decision log. AI can help by surfacing options and risks, but the final call stays with a named person. Competitive players make the same split: adjusting positioning mid-round is cheap, while committing every resource to a single round is not."
+      ]
+    },
+    {
+      "heading": "Common mistakes",
+      "paragraphs": [
+        "The sorting step can go wrong in predictable ways. Watch for these patterns."
+      ],
+      "list": {
+        "type": "ul",
+        "items": [
+          "<strong>False one-way doors.</strong> Fear makes a reversible choice feel permanent. Ask what reversing it would actually take.",
+          "<strong>Hidden one-way doors.</strong> A small pilot becomes permanent once customers, contracts, or public promises depend on it.",
+          "<strong>Slow reversals.</strong> A door is only two-way if you notice the problem in time. Long feedback delays quietly lock it.",
+          "<strong>Never closing the door.</strong> Reversible does not mean endlessly revisited. Set a review date and hold the decision until then."
+        ]
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a one-way door decision?",
+      "a": "It is a choice that is costly or impossible to reverse, such as a major hire, a public commitment, or a platform migration. These deserve slower, more careful review."
+    },
+    {
+      "q": "How do you know if a decision is reversible?",
+      "a": "Estimate the cost and time to undo it, and how soon you would see it failing. If both are low, treat it as a two-way door."
+    }
+  ],
+  "related": [
+    "decision-loops",
+    "feedback-latency",
+    "which-decisions-should-stay-human"
+  ],
+  "further": {
+    "href": "https://carenella1.github.io/articles/14-the-decision-log-the-simplest-system-most.html",
+    "label": "The Decision Log: The Simplest System Most Teams Skip (essay)"
+  },
+  "published": "2026-11-16"
+}
