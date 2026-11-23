@@ -1,0 +1,68 @@
+{
+  "slug": "ai-prompt-framing-for-leaders",
+  "type": "question",
+  "title": "How Do You Ask AI the Right Questions as a Leader?",
+  "seoTitle": "How Do You Ask AI the Right Questions as a Leader? | Chase Arenella",
+  "description": "Generic questions get generic AI answers. Learn how leaders can frame prompts around a real decision, with constraints, a stated lean, and a set format.",
+  "answer": "Frame the question around a specific decision. Give the situation, the constraints, your current lean, and the format you need. Generic questions get generic answers because the tool has nothing to push against.",
+  "sections": [
+    {
+      "heading": "Why generic questions get generic answers",
+      "paragraphs": [
+        "AI tools return the most likely useful response to what you typed. Ask \"How do I improve team performance?\" and you get the average answer: communicate more, set clear goals, give feedback. That advice is true for everyone, so it helps no one.",
+        "The fix is not clever wording. It is <strong>specificity about the decision</strong>. The tool can only be as sharp as the situation you describe."
+      ]
+    },
+    {
+      "heading": "Frame the question around a decision",
+      "paragraphs": [
+        "Start with the choice you face, not the topic you are curious about. \"Should we cut the roadmap from six projects to three?\" beats \"How do we prioritize?\" A decision has options, a deadline, and a cost of being wrong.",
+        "Before you send a prompt, check that it carries these five parts."
+      ],
+      "list": {
+        "type": "ol",
+        "items": [
+          "<strong>Situation:</strong> team size, stage, and what recently changed.",
+          "<strong>Decision:</strong> the choice and the options on the table.",
+          "<strong>Constraints:</strong> time, budget, people, and anything that cannot move.",
+          "<strong>Your current lean:</strong> what you believe and why.",
+          "<strong>Output format:</strong> ranked options, a one-page memo, or the three biggest risks."
+        ]
+      }
+    },
+    {
+      "heading": "Ask for friction, not agreement",
+      "paragraphs": [
+        "AI tools tend to work inside the framing they are given. Write \"Why is option A best?\" and you will get reasons A is best. Ask instead for the strongest case against your lean, the assumptions it depends on, and what evidence would change the recommendation.",
+        "This is the pre-mortem habit. Competitive teams do it before a match: assume the strategy fails, then find where. Try the same prompt: <em>\"Assume this plan failed in six months. What are the three most likely causes?\"</em>"
+      ]
+    },
+    {
+      "heading": "Work in short rounds and keep the call",
+      "paragraphs": [
+        "Treat the first answer as a draft. Follow with narrow questions: \"Which of these risks is easiest to reverse?\" or \"What would I need to know to be 80 percent sure?\" Each round should sharpen the picture, not restate it.",
+        "The tool supplies options and counterarguments. You own the decision. Leave out sensitive data you would not share outside the company, and check any claim that would change what you do."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a good AI prompt for a leader?",
+      "a": "A good prompt names one decision, describes the situation and constraints, and states the format of the answer you want. Then it asks for risks or counterarguments."
+    },
+    {
+      "q": "Should I tell the AI my opinion first?",
+      "a": "Yes, state your lean so the tool can work with it. Then ask it to argue against you, so you get a test of your view instead of an echo."
+    }
+  ],
+  "related": [
+    "which-decisions-should-stay-human",
+    "context-architecture",
+    "signal-vs-noise"
+  ],
+  "further": {
+    "href": "https://carenella1.github.io/articles/13-ai-augmented-doesn-t-mean-ai-automated.html",
+    "label": "AI-Augmented Doesn't Mean AI-Automated (essay)"
+  },
+  "published": "2026-11-23"
+}
