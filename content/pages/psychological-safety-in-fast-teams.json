@@ -11,14 +11,22 @@
       "paragraphs": [
         "<strong>Psychological safety</strong> is a team condition. People believe they will not be punished or embarrassed for raising a concern, asking a question, admitting a mistake, or disagreeing. It describes how a team treats risk in conversation.",
         "It is not comfort. It does not mean low standards, constant agreement, or avoiding hard feedback. A safe team can be demanding. The difference is that bad news travels quickly toward the people who can act on it."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-psychological-safety-in-fast-teams-1.jpg",
+        "alt": "Overhead view of a round wooden table with mismatched coffee mugs, open notebooks, and a small red flag standing upright in the center. Illustration for \"What psychological safety means\", from \"What Is Psychological Safety, and Why Do Fast-Moving Teams Need It More?\", a field guide by Chase Arenella."
+      }
     },
     {
       "heading": "Why fast teams need more of it",
       "paragraphs": [
         "Speed shortens the time available to catch errors. A slow team has gates, reviews, and long gaps where problems surface on their own. A fast team ships, tests, and changes direction often, so it depends on people to flag problems early.",
         "<strong>Silence is expensive at speed.</strong> A doubt kept private for one day can become a week of wrong work. Competitive gaming shows this clearly. A player who calls out a misplay immediately lets the team adjust in the same round. A player who hides it costs the team the next three."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-psychological-safety-in-fast-teams-2.jpg",
+        "alt": "A gaming headset with its microphone angled forward rests beside a glowing keyboard and two empty cans on a dark desk, the monitor softly blurred behind. Illustration for \"Why fast teams need more of it\", from \"What Is Psychological Safety, and Why Do Fast-Moving Teams Need It More?\", a field guide by Chase Arenella."
+      }
     },
     {
       "heading": "Signs it is missing",
@@ -33,6 +41,10 @@
           "Questions come mostly from the most senior or most secure person.",
           "Retrospectives produce polite, vague action items that repeat every cycle."
         ]
+      },
+      "image": {
+        "file": "assets/images/sections/chase-arenella-psychological-safety-in-fast-teams-3.jpg",
+        "alt": "An empty conference room after a meeting, chairs pushed neatly in, a whiteboard wiped mostly clean, and a closed laptop left alone at the table's far end. Illustration for \"Signs it is missing\", from \"What Is Psychological Safety, and Why Do Fast-Moving Teams Need It More?\", a field guide by Chase Arenella."
       }
     },
     {
@@ -49,6 +61,10 @@
           "<strong>Review the system, not the person.</strong> Ask what the process allowed, not who failed.",
           "<strong>Ask for dissent directly.</strong> \"What would make this plan fail?\" gets more than \"Any questions?\""
         ]
+      },
+      "image": {
+        "file": "assets/images/sections/chase-arenella-psychological-safety-in-fast-teams-4.jpg",
+        "alt": "Close-up of a corkboard with blank colored index cards pinned in a row, a small stopwatch hanging from a pushpin, morning light falling across it. Illustration for \"How to build it this week\", from \"What Is Psychological Safety, and Why Do Fast-Moving Teams Need It More?\", a field guide by Chase Arenella."
       }
     }
   ],

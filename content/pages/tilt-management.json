@@ -11,7 +11,11 @@
       "paragraphs": [
         "Poker players coined tilt to describe a player who loses a big hand and starts playing recklessly to win it back. Competitive gamers adopted it for the same pattern: one bad round, then rushed plays, then a lost match that was winnable.",
         "The pattern isn't limited to games. A leader who takes a hard hit in a morning meeting and then makes three snap calls before lunch is on tilt. So is a team that misses a deadline and immediately overcommits to make up for it."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-tilt-management-1.jpg",
+        "alt": "A green felt poker table under a low lamp, toppled chip stacks and scattered cards, with a game controller resting at the edge, viewed from above. Illustration for \"Where the term comes from\", from \"Tilt Management\", a field guide by Chase Arenella."
+      }
     },
     {
       "heading": "Early signs of tilt",
@@ -26,6 +30,10 @@
           "Taking bigger risks to win back a loss in one move.",
           "Short replies, blame, and less listening in conversations."
         ]
+      },
+      "image": {
+        "file": "assets/images/sections/chase-arenella-tilt-management-2.jpg",
+        "alt": "Close-up of a cluttered office desk: spilled coffee spreading across crumpled blank paper, a snapped pencil, and a wall clock blurred in the background. Illustration for \"Early signs of tilt\", from \"Tilt Management\", a field guide by Chase Arenella."
       }
     },
     {
@@ -33,14 +41,22 @@
       "paragraphs": [
         "Good players build a reset into their routine. A breath, a short pause, a fixed phrase that marks the end of the last round. The ritual itself matters less than the fact that it's automatic and doesn't depend on willpower in the moment.",
         "At work, the equivalent is a rule: no irreversible decisions within an hour of a major setback. Another is naming it out loud. Saying we're a bit tilted after that call gives the whole team permission to slow down."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-tilt-management-3.jpg",
+        "alt": "A quiet window nook at dawn with a steaming mug, a small sand timer, and a closed notebook on a wooden sill, soft light streaming in. Illustration for \"Reset habits that work\", from \"Tilt Management\", a field guide by Chase Arenella."
+      }
     },
     {
       "heading": "Why this belongs in leadership",
       "paragraphs": [
         "Leaders set the emotional tempo of a team. A tilted leader passes tilt down the chain, and suddenly the whole group is rushing. A leader who resets visibly teaches the team that a bad outcome is information, not an emergency.",
         "Treat tilt as a performance skill, not a personality trait. Like any skill, it improves with practice and review."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-tilt-management-4.jpg",
+        "alt": "Wide view of an empty conference room, chairs neatly tucked around a long table, a single metronome at its head, afternoon light across the floor. Illustration for \"Why this belongs in leadership\", from \"Tilt Management\", a field guide by Chase Arenella."
+      }
     }
   ],
   "faqs": [
@@ -53,7 +69,11 @@
       "a": "Pause new commitments, review the last few decisions with fresh eyes, and reverse anything that was made in a rush and can still be undone cheaply."
     }
   ],
-  "related": ["decision-loops", "what-can-competitive-gaming-teach-leaders", "meta-awareness"],
+  "related": [
+    "decision-loops",
+    "what-can-competitive-gaming-teach-leaders",
+    "meta-awareness"
+  ],
   "further": {
     "href": "https://carenella1.github.io/articles/18-tilt-management-the-competitive-gaming-skill.html",
     "label": "Tilt Management: The Competitive-Gaming Skill Every High-Pressure Leader Needs (essay)"

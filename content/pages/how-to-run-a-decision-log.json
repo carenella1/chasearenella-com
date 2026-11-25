@@ -11,7 +11,11 @@
       "paragraphs": [
         "Memory rewrites history. A month after a decision, people remember the reasoning that matches the outcome, not the reasoning they actually used. A log captures the thinking before the result is known, so you can judge the decision on its merits instead of its luck.",
         "It also solves a quieter problem: new team members can see why things are the way they are, instead of reopening settled questions."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-how-to-run-a-decision-log-1.jpg",
+        "alt": "A sealed envelope resting on a wooden shelf beside an antique hourglass, late afternoon sunlight casting long shadows across dusty book spines in a quiet study. Illustration for \"Why keep a decision log\", from \"How Do You Run a Decision Log?\", a field guide by Chase Arenella."
+      }
     },
     {
       "heading": "A simple template",
@@ -28,6 +32,10 @@
           "<strong>Kill criteria:</strong> the result that would make you reverse it.",
           "<strong>Review date:</strong> when you'll check."
         ]
+      },
+      "image": {
+        "file": "assets/images/sections/chase-arenella-how-to-run-a-decision-log-2.jpg",
+        "alt": "Overhead view of a single blank index card, a sharpened pencil, and a small kitchen timer on a clean white desk under soft, even daylight. Illustration for \"A simple template\", from \"How Do You Run a Decision Log?\", a field guide by Chase Arenella."
       }
     },
     {
@@ -35,14 +43,22 @@
       "paragraphs": [
         "Not every choice. Log decisions that are expensive to reverse, that affect more than one team, or that people will ask about later. A good rule: if you'd have to explain it in a meeting six months from now, log it today.",
         "Skip routine calls. A log full of trivia gets ignored, and then the important entries get ignored with it."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-how-to-run-a-decision-log-3.jpg",
+        "alt": "Low-angle view of a wire wastebasket overflowing with crumpled paper beside an open filing drawer holding only a few folders with blank colored tabs. Illustration for \"Which decisions to log\", from \"How Do You Run a Decision Log?\", a field guide by Chase Arenella."
+      }
     },
     {
       "heading": "Making the review stick",
       "paragraphs": [
         "Put the review date on a calendar the moment you write the entry. When it arrives, answer three questions: what happened, did the kill criteria trigger, and what would we do differently with the same information?",
         "That last question matters. It separates a bad decision from a good decision with a bad outcome, which is the whole point of keeping the log."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-how-to-run-a-decision-log-4.jpg",
+        "alt": "A paper wall calendar with one square circled in red marker, its numbers softly out of focus, pinned above a tidy shelf in a quiet office corner. Illustration for \"Making the review stick\", from \"How Do You Run a Decision Log?\", a field guide by Chase Arenella."
+      }
     }
   ],
   "faqs": [
@@ -55,7 +71,11 @@
       "a": "Yes, for drafting entries from meeting notes and reminding owners about review dates. The reasoning and the kill criteria should still come from the person accountable for the call."
     }
   ],
-  "related": ["decision-loops", "feedback-latency", "which-decisions-should-stay-human"],
+  "related": [
+    "decision-loops",
+    "feedback-latency",
+    "which-decisions-should-stay-human"
+  ],
   "further": {
     "href": "https://carenella1.github.io/articles/14-the-decision-log-the-simplest-system-most.html",
     "label": "The Decision Log: The Simplest System Most Teams Skip (essay)"

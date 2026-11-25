@@ -19,6 +19,10 @@
           "<strong>Novelty:</strong> is the situation unlike the data any model has seen?",
           "<strong>Reversibility:</strong> would a mistake be expensive or impossible to undo?"
         ]
+      },
+      "image": {
+        "file": "assets/images/sections/chase-arenella-which-decisions-should-stay-human-1.jpg",
+        "alt": "Overhead view of a wooden desk holding a brass balance scale, four smooth river stones in a row, and an open blank notebook in soft morning window light. Illustration for \"The four-part test\", from \"Which Decisions Should Stay Human When You Use AI?\", a field guide by Chase Arenella."
       }
     },
     {
@@ -26,20 +30,32 @@
       "paragraphs": [
         "AI is strong at the work around a decision. It can lay out options you hadn't considered, summarize what's known, stress-test a plan by arguing the other side, and draft the message that explains the outcome. That preparation can make a human decision both faster and better informed.",
         "For routine, reversible, low-stakes choices with clear rules, letting AI decide outright is often fine. Sorting tickets, scheduling, and formatting reports rarely need a person's judgment."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-which-decisions-should-stay-human-2.jpg",
+        "alt": "Neatly sorted mail trays and color-coded folders on a bright office shelf, beside a closed laptop and a small desk lamp, viewed straight on. Illustration for \"What AI is good for\", from \"Which Decisions Should Stay Human When You Use AI?\", a field guide by Chase Arenella."
+      }
     },
     {
       "heading": "People decisions stay with people",
       "paragraphs": [
         "Hiring, promotions, performance concerns, and conflicts sit firmly on the human side. They involve accountability, values, and context no system fully sees. AI can help structure an interview or summarize feedback, but the person who will live with the result should make the call and be able to explain it.",
         "Teams notice who actually decided. Trust drops quickly when people suspect a decision about them was outsourced."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-which-decisions-should-stay-human-3.jpg",
+        "alt": "Two empty armchairs angled toward each other across a low coffee table with two mugs of tea, in a quiet glass-walled office at dusk. Illustration for \"People decisions stay with people\", from \"Which Decisions Should Stay Human When You Use AI?\", a field guide by Chase Arenella."
+      }
     },
     {
       "heading": "Making the line visible",
       "paragraphs": [
         "Write down which decisions in your team are AI-assisted and which are AI-decided, and share the list. It removes guesswork, makes review easier, and gives people a clear place to push back. Revisit it every few months as tools improve and as you learn where your lines were in the wrong place."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-which-decisions-should-stay-human-4.jpg",
+        "alt": "Low-angle side view of a corkboard on a hallway wall, blank index cards pinned in two columns divided by a taut red string. Illustration for \"Making the line visible\", from \"Which Decisions Should Stay Human When You Use AI?\", a field guide by Chase Arenella."
+      }
     }
   ],
   "faqs": [
@@ -52,7 +68,11 @@
       "a": "The risk scales with stakes and reversibility. Low-stakes, easily reversed decisions with clear rules are reasonable to delegate, as long as someone reviews the results periodically."
     }
   ],
-  "related": ["what-is-ai-augmented-leadership", "how-to-run-a-decision-log", "signal-vs-noise"],
+  "related": [
+    "what-is-ai-augmented-leadership",
+    "how-to-run-a-decision-log",
+    "signal-vs-noise"
+  ],
   "further": {
     "href": "https://carenella1.github.io/articles/13-ai-augmented-doesn-t-mean-ai-automated.html",
     "label": "AI-Augmented Doesn't Mean AI-Automated (essay)"

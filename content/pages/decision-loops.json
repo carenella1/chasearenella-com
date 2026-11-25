@@ -11,7 +11,11 @@
       "paragraphs": [
         "Every decision runs through the same four steps, whether it takes a second or a quarter. You <strong>observe</strong> a change. You <strong>decide</strong> on a response. You <strong>act</strong>. Then you <strong>learn</strong> whether the action worked, and that learning feeds the next observation.",
         "Military strategists call a version of this the OODA loop. Agile teams call it a sprint. A competitive gamer calls it reading the map. The label matters less than the shape: a cycle that either closes quickly and compounds, or drags and goes stale."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-decision-loops-1.jpg",
+        "alt": "Aerial view of a quiet roundabout at dawn, four roads feeding one circular loop, streetlights still glowing, dew shining on the grass of the center island. Illustration for \"What a decision loop is\", from \"Decision Loops\", a field guide by Chase Arenella."
+      }
     },
     {
       "heading": "Where loops slow down",
@@ -26,6 +30,10 @@
           "<strong>Act:</strong> handoffs between tools and teams add days to a one-hour task.",
           "<strong>Learn:</strong> nobody checks the result, so the loop never actually closes."
         ]
+      },
+      "image": {
+        "file": "assets/images/sections/chase-arenella-decision-loops-2.jpg",
+        "alt": "An empty conference room with chairs pushed in, a wall clock showing late afternoon, cold coffee cups and a stack of unopened folders across the long table. Illustration for \"Where loops slow down\", from \"Decision Loops\", a field guide by Chase Arenella."
       }
     },
     {
@@ -33,14 +41,22 @@
       "paragraphs": [
         "Speed comes from removing waiting, not from thinking less. Start by timing each step for one recent decision. The slowest step is almost never the one people complain about.",
         "Then make three structural changes. Push decisions to the person closest to the information. Agree in advance on what result would change your mind. Schedule the review when you make the decision, not after something goes wrong. A loop with a built-in review date closes on its own."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-decision-loops-3.jpg",
+        "alt": "Overhead close-up of a wooden desk holding a stopwatch, an open notebook ruled into blank columns, a sharpened pencil, and a desk calendar with one square circled red. Illustration for \"How to tighten a loop without rushing it\", from \"Decision Loops\", a field guide by Chase Arenella."
+      }
     },
     {
       "heading": "Decision loops under pressure",
       "paragraphs": [
         "Competitive games compress the loop into seconds, which makes the pattern easy to see. Strong players don't decide faster because they're smarter. They decide faster because they've pre-loaded responses to common situations and spend their attention only on what's new.",
         "Teams can do the same. Write down the decisions you make every week and give them default answers. That frees the loop for the decisions that deserve real thought."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-decision-loops-4.jpg",
+        "alt": "Low side-angle view of a game controller resting beside a dim monitor glowing with abstract colored shapes, an unlabeled can nearby, cool blue light washing across a tidy desk. Illustration for \"Decision loops under pressure\", from \"Decision Loops\", a field guide by Chase Arenella."
+      }
     }
   ],
   "faqs": [
@@ -53,7 +69,11 @@
       "a": "As fast as the environment changes. If your market or project shifts weekly, a monthly review loop means you're always responding to old information."
     }
   ],
-  "related": ["feedback-latency", "how-to-run-a-decision-log", "tilt-management"],
+  "related": [
+    "feedback-latency",
+    "how-to-run-a-decision-log",
+    "tilt-management"
+  ],
   "further": {
     "href": "https://carenella1.github.io/articles/09-decision-loops-under-pressure.html",
     "label": "Decision Loops Under Pressure (essay)"

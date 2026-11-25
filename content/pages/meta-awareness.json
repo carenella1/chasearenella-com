@@ -11,7 +11,11 @@
       "paragraphs": [
         "Competitive gamers use meta, short for most effective tactics available, to describe the dominant way to play at a given moment. When a game updates or a new strategy proves itself in top play, the meta changes. Players who notice early win. Players who notice late keep executing a strategy that has quietly stopped working.",
         "Every field has a meta: the standard way to run a sales team, structure a product launch, or hire engineers. It feels like common sense, which is exactly why it's hard to see when it changes."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-meta-awareness-1.jpg",
+        "alt": "A gaming desk at night: a controller resting beside a dark monitor, a worn mousepad, and a half-empty mug in a familiar, long-used arrangement. Illustration for \"What the meta means\", from \"Meta Awareness\", a field guide by Chase Arenella."
+      }
     },
     {
       "heading": "Signs the meta is shifting",
@@ -26,6 +30,10 @@
           "Your best people start quietly working around the standard process.",
           "The cost of the usual approach rises while its results stay flat."
         ]
+      },
+      "image": {
+        "file": "assets/images/sections/chase-arenella-meta-awareness-2.jpg",
+        "alt": "A row of identical potted seedlings on a greenhouse bench, most drooping slightly, while one small unmarked pot in the corner grows tall and vividly green. Illustration for \"Signs the meta is shifting\", from \"Meta Awareness\", a field guide by Chase Arenella."
       }
     },
     {
@@ -33,13 +41,21 @@
       "paragraphs": [
         "Look at the edges, not the center. The center of a field repeats the current meta; the edges test the next one. Read what newer, smaller players are trying and track which experiments keep working after the novelty wears off.",
         "Hold your own strategies lightly. Write down why you believe your current approach is the best one. When those reasons stop being true, the strategy is on borrowed time, even if the results haven't dropped yet."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-meta-awareness-3.jpg",
+        "alt": "Aerial view of a dense pine forest's outer edge, where young saplings spread into an open meadow, the newest growth scattered thinly along the boundary. Illustration for \"How to build the habit\", from \"Meta Awareness\", a field guide by Chase Arenella."
+      }
     },
     {
       "heading": "The executive blind spot",
       "paragraphs": [
         "Leaders are often the last to see a meta shift because they're furthest from the work and most invested in the strategy that got them there. Frontline teams usually notice first. Create a regular, low-risk way for them to report what's changing, and treat their workarounds as data rather than disobedience."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-meta-awareness-4.jpg",
+        "alt": "A dirt shortcut worn diagonally across a manicured corporate lawn, bypassing the paved walkway, viewed from a high glass office window far above. Illustration for \"The executive blind spot\", from \"Meta Awareness\", a field guide by Chase Arenella."
+      }
     }
   ],
   "faqs": [
@@ -52,7 +68,11 @@
       "a": "It depends on the field, but technology shifts like AI are shortening the cycle. Checking your core assumptions once a quarter is a reasonable starting point."
     }
   ],
-  "related": ["what-can-competitive-gaming-teach-leaders", "signal-vs-noise", "constraints-as-strategy"],
+  "related": [
+    "what-can-competitive-gaming-teach-leaders",
+    "signal-vs-noise",
+    "constraints-as-strategy"
+  ],
   "further": {
     "href": "https://carenella1.github.io/articles/17-meta-awareness-the-strategy-shift-executives.html",
     "label": "Meta Awareness: The Strategy Shift Executives See Too Late (essay)"

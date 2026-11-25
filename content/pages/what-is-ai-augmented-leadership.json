@@ -11,7 +11,11 @@
       "paragraphs": [
         "Automation replaces a task. Augmentation expands a person. An automated report runs without anyone reading it. An augmented leader uses AI to read fifty reports, surface the three that matter, and then thinks hard about those three.",
         "The distinction matters because leadership is mostly judgment under uncertainty. AI can make the inputs to that judgment better and faster. It can't own the call, and leaders who let it quietly drift into owning the call lose the trust of their teams."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-what-is-ai-augmented-leadership-1.jpg",
+        "alt": "A long oak table holding a tall stack of manila folders, with three folders set apart beneath a warm desk lamp, a pair of reading glasses resting beside them. Illustration for \"Augmented, not automated\", from \"What Is AI-Augmented Leadership?\", a field guide by Chase Arenella."
+      }
     },
     {
       "heading": "What it looks like in a normal week",
@@ -26,6 +30,10 @@
           "First drafts of plans and messages that the leader then edits.",
           "Quick scenario checks before committing to a direction."
         ]
+      },
+      "image": {
+        "file": "assets/images/sections/chase-arenella-what-is-ai-augmented-leadership-2.jpg",
+        "alt": "Early morning kitchen counter with a steaming coffee mug, a closed laptop, and a paper wall calendar with unmarked squares, soft daylight streaming through a window. Illustration for \"What it looks like in a normal week\", from \"What Is AI-Augmented Leadership?\", a field guide by Chase Arenella."
       }
     },
     {
@@ -33,14 +41,22 @@
       "paragraphs": [
         "Three skills separate leaders who get real value from AI from those who get more noise. The first is <strong>framing</strong>: asking precise questions instead of vague ones. The second is <strong>verification</strong>: knowing which outputs to trust and which to check. The third is <strong>system design</strong>: building repeatable routines instead of one-off prompts.",
         "None of these are technical. They're the same skills good leaders already use with people, applied to a new kind of collaborator."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-what-is-ai-augmented-leadership-3.jpg",
+        "alt": "Overhead view of a wooden workbench with a magnifying glass, a carpenter's square, and small unlabeled jars arranged in a neat, repeating grid pattern. Illustration for \"The skills it requires\", from \"What Is AI-Augmented Leadership?\", a field guide by Chase Arenella."
+      }
     },
     {
       "heading": "Common mistakes",
       "paragraphs": [
         "The most common is using AI to produce more, rather than to decide better. More documents, more updates, more summaries of summaries. That increases noise for everyone downstream.",
         "The second is hiding the AI's role. Teams handle AI-assisted work well when they know where it was used and who checked it. They handle it badly when they find out later."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-what-is-ai-augmented-leadership-4.jpg",
+        "alt": "Low-angle view of an office printer tray overflowing with blank paper, loose sheets scattered across a carpeted floor under harsh fluorescent ceiling lights. Illustration for \"Common mistakes\", from \"What Is AI-Augmented Leadership?\", a field guide by Chase Arenella."
+      }
     }
   ],
   "faqs": [
@@ -53,7 +69,11 @@
       "a": "It will replace parts of the job that are mostly information routing. The parts built on judgment, trust, and accountability become more important, not less."
     }
   ],
-  "related": ["which-decisions-should-stay-human", "signal-vs-noise", "context-architecture"],
+  "related": [
+    "which-decisions-should-stay-human",
+    "signal-vs-noise",
+    "context-architecture"
+  ],
   "further": {
     "href": "https://carenella1.github.io/leadership.html",
     "label": "The AI-Augmented Leadership framework"

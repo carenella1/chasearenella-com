@@ -4,3 +4,4 @@ Disallow: /content/
 Disallow: /scripts/
 
 Sitemap: https://chasearenella.com/sitemap.xml
+Sitemap: https://chasearenella.com/video-sitemap.xml

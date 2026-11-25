@@ -11,7 +11,11 @@
       "paragraphs": [
         "Keeping options open feels safe. In practice, every open option carries a cost: attention, coordination, and the slow drain of not committing. A team with ten priorities has none. A roadmap that can change any day can't be planned against.",
         "Constraints remove that drain. When the choice set is small, decisions get faster, trade-offs become visible, and people can focus long enough to finish."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-constraints-as-strategy-1.jpg",
+        "alt": "Overhead view of a cluttered desk crowded with a dozen open notebooks, scattered pens, half-finished coffee cups and tangled cables, nothing completed, lit by flat afternoon light. Illustration for \"Why flexibility has a cost\", from \"Constraints as Strategy\", a field guide by Chase Arenella."
+      }
     },
     {
       "heading": "Useful constraints to try",
@@ -26,6 +30,10 @@
           "<strong>One priority per quarter:</strong> everything else is maintenance.",
           "<strong>A stop list:</strong> things the team has agreed not to do."
         ]
+      },
+      "image": {
+        "file": "assets/images/sections/chase-arenella-constraints-as-strategy-2.jpg",
+        "alt": "Eye-level view of a kanban board with three columns, each holding only two blank cards, empty space beneath, a single red magnet marking the limit line. Illustration for \"Useful constraints to try\", from \"Constraints as Strategy\", a field guide by Chase Arenella."
       }
     },
     {
@@ -33,13 +41,21 @@
       "paragraphs": [
         "Limits don't kill creativity; they direct it. Game designers know this well. Tight rules create interesting decisions, and a game with no constraints isn't a game at all. Teams work the same way. A fixed budget or deadline forces people to find the essential version of an idea instead of the bloated one.",
         "The trick is to choose constraints on purpose rather than inherit them by accident. Accidental constraints, like an overloaded reviewer, frustrate. Chosen ones focus."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-constraints-as-strategy-3.jpg",
+        "alt": "Low-angle close-up of a wooden chessboard mid-game, a few carved pieces casting long shadows across the squares, warm lamp light glowing in a quiet study. Illustration for \"Constraints and creativity\", from \"Constraints as Strategy\", a field guide by Chase Arenella."
+      }
     },
     {
       "heading": "Knowing when to loosen them",
       "paragraphs": [
         "A constraint is a tool, not a value. Review your constraints the same way you'd review any strategy. If a limit is causing workarounds, missed opportunities, or quiet resentment, it may have outlived its purpose. Loosen it deliberately, and replace it with a tighter one elsewhere if focus starts to slip."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-constraints-as-strategy-4.jpg",
+        "alt": "Outdoor garden scene of a young tree with its stake tie loosened, a coiled strap resting on the soil, morning light and dew on the surrounding grass. Illustration for \"Knowing when to loosen them\", from \"Constraints as Strategy\", a field guide by Chase Arenella."
+      }
     }
   ],
   "faqs": [
@@ -52,7 +68,11 @@
       "a": "Short-term, they reduce options. Long-term, they usually make teams more adaptable, because focused teams finish work faster and can respond to change from a stable base."
     }
   ],
-  "related": ["what-is-systems-thinking-for-teams", "meta-awareness", "decision-loops"],
+  "related": [
+    "what-is-systems-thinking-for-teams",
+    "meta-awareness",
+    "decision-loops"
+  ],
   "further": {
     "href": "https://carenella1.github.io/articles/15-constraints-are-strategy-why-fewer-options.html",
     "label": "Constraints Are Strategy: Why Fewer Options Beat Total Flexibility (essay)"

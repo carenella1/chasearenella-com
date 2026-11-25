@@ -1,0 +1,591 @@
+[
+  {
+    "slug": "ai-prompt-framing-for-leaders",
+    "title": "How Do You Ask AI the Right Questions as a Leader?",
+    "description": "Learn how leaders can get sharper answers from AI by framing questions around a real decision with context, constraints, and a clear format. See how to ask for friction, run a pre-mortem, and keep ownership of the call.",
+    "transcript": "Ask AI about a specific decision, not a topic, because generic questions get generic answers. The tool returns the most likely response to what you type. Ask how to improve team performance, and you get the average answer. That advice is true for everyone, so it helps no one. The fix is not clever wording. It is specificity. Start with the choice you face. Should we cut the roadmap from six projects to three? That beats asking how to prioritize. Describe your situation. Name the options, the constraints that cannot move, and where you lean and why. Then say what format you need, like a one-page memo. Next, ask for friction, not agreement. AI tends to work inside your framing. Ask for the strongest case against your lean. Try a pre-mortem. Assume this plan failed in six months. What are the three most likely causes? Treat the first answer as a draft, and work in narrow rounds. Leave out sensitive data, and check any claim that would change what you do. The tool supplies options. You own the decision. More from Chase Arenella at chase arenella dot com.",
+    "captions": [
+      "Generic questions get generic answers",
+      "Frame the question around a decision",
+      "Give situation, constraints, and your lean",
+      "Ask for the case against your lean",
+      "Run a pre-mortem on your plan",
+      "Work in short rounds; you own the call"
+    ],
+    "file": "videos/ai-prompt-framing-for-leaders/chase-arenella-ai-prompt-framing-for-leaders.mp4",
+    "thumbnail": "videos/ai-prompt-framing-for-leaders/chase-arenella-ai-prompt-framing-for-leaders.jpg",
+    "scenes": [
+      {
+        "file": "assets/images/generated/chase-arenella-ai-prompt-framing-for-leaders-1.jpg",
+        "alt": "An empty meeting room at dawn, chairs pushed in around a long table, pale light falling across a blank whiteboard and a closed laptop. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-ai-prompt-framing-for-leaders-2.jpg",
+        "alt": "A desk with an open notebook, a pen resting on blank pages, and a cooling cup of coffee beside a small desk lamp. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-ai-prompt-framing-for-leaders-3.jpg",
+        "alt": "A quiet strategy board in a dim office, colored pins and string connecting blank index cards, a chess set waiting on a nearby shelf. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-ai-prompt-framing-for-leaders-4.jpg",
+        "alt": "A tidy desk at dusk with a single folder, a closed laptop, and a window view of city lights beginning to glow. From a Chase Arenella field guide video."
+      }
+    ],
+    "durationSeconds": 66,
+    "uploadDate": "2026-11-25T05:09:15.352Z"
+  },
+  {
+    "slug": "blameless-retrospectives",
+    "title": "Blameless Retrospectives",
+    "description": "Learn how blameless retrospectives separate accountability from blame and why punishment makes reviews dishonest. See a repeatable structure for finding system fixes that actually stick.",
+    "transcript": "A blameless retrospective asks how the system allowed a failure, not who caused it. Blameless does not mean nobody is accountable. Accountability asks who will own the fix. Blame asks who should feel bad. If one person's slip can cause a failure, the system lacked a safeguard. When reviews end in punishment, people hide things. They soften timelines and stay quiet about near misses. A gaming squad that dreads replay review stops calling out misplays, and errors repeat. Lower the cost of saying I made that call, and you get accurate information sooner. Hold the review within a week, for sixty to ninety minutes. Build a timeline from logs before interpreting it. Ask what you saw, not why you did that. Look for contributing factors across process, tools, and information. Write fixes aimed at safeguards, each with one owner and one deadline. Watch your language, because words like careless turn a review into a verdict. Leaders should speak last and go first on their own mistakes. Then check the actions at the next review. More from Chase Arenella at chase arenella dot com.",
+    "captions": [
+      "Ask how, not who",
+      "Accountability is not blame",
+      "Blame makes people hide facts",
+      "Review within a week, 60 to 90 min",
+      "Facts first, then what and how",
+      "Fix safeguards: one owner, one date",
+      "Leaders speak last, then follow up"
+    ],
+    "file": "videos/blameless-retrospectives/chase-arenella-blameless-retrospectives.mp4",
+    "thumbnail": "videos/blameless-retrospectives/chase-arenella-blameless-retrospectives.jpg",
+    "scenes": [
+      {
+        "file": "assets/images/generated/chase-arenella-blameless-retrospectives-1.jpg",
+        "alt": "An empty meeting room at dawn, chairs pushed neatly under a long table, a blank whiteboard and soft golden light through tall windows. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-blameless-retrospectives-2.jpg",
+        "alt": "A quiet desk with a game controller resting beside a monitor's soft glow, an empty chair, and a dim room lit by evening lamps. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-blameless-retrospectives-3.jpg",
+        "alt": "A wooden desk with an open notebook, scattered sticky notes in neat columns, a pen, and a cooling cup of coffee in morning light. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-blameless-retrospectives-4.jpg",
+        "alt": "A small conference table with a closed laptop, a wall calendar with marked squares, and a potted plant near a bright window. From a Chase Arenella field guide video."
+      }
+    ],
+    "durationSeconds": 67,
+    "uploadDate": "2026-11-25T05:05:56.254Z"
+  },
+  {
+    "slug": "constraints-as-strategy",
+    "title": "Constraints as Strategy",
+    "description": "Learn why deliberately limiting priorities, scope, and time leads to clearer decisions and faster execution. See practical constraints to try, how they direct creativity, and when to loosen them.",
+    "transcript": "Using constraints as strategy means deliberately limiting your options, because a limit forces clearer choices and faster execution than open-ended flexibility. Keeping options open feels safe. But every open option has a cost. It drains attention and coordination, and delays commitment. A team with ten priorities has none. When the choice set is small, decisions get faster, trade-offs become visible, and people can focus long enough to finish. The best constraints are simple enough to remember and strict enough to bite. Try a work-in-progress limit for each person. Try fixed timeboxes, where scope flexes but the date doesn't. Pick one priority per quarter. Everything else is maintenance. Keep a stop list of things the team agrees not to do. Limits don't kill creativity. They direct it. Like tight rules in a game, a fixed budget or deadline pushes people toward the essential version of an idea. Choose constraints on purpose, because accidental ones frustrate. A constraint is a tool, not a value. If it causes workarounds or quiet resentment, loosen it deliberately. More from Chase Arenella at chase arenella dot com.",
+    "captions": [
+      "Limits force clearer, faster choices",
+      "Every open option has a cost",
+      "Ten priorities means none",
+      "Simple enough to remember, strict to bite",
+      "Limits direct creativity",
+      "Choose constraints on purpose",
+      "A constraint is a tool, not a value"
+    ],
+    "file": "videos/constraints-as-strategy/chase-arenella-constraints-as-strategy.mp4",
+    "thumbnail": "videos/constraints-as-strategy/chase-arenella-constraints-as-strategy.jpg",
+    "scenes": [
+      {
+        "file": "assets/images/generated/chase-arenella-constraints-as-strategy-1.jpg",
+        "alt": "An empty meeting room at dawn, a single sticky note on a bare whiteboard, chairs neatly pushed in, soft golden light through tall windows. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-constraints-as-strategy-2.jpg",
+        "alt": "A tidy desk with a small hourglass, a closed notebook, and three pencils lined up beside a cooling cup of coffee. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-constraints-as-strategy-3.jpg",
+        "alt": "A wooden board game set up on a table with a few pieces and dice, lit by a warm lamp in a quiet room. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-constraints-as-strategy-4.jpg",
+        "alt": "A garden path with neatly pruned hedges and one loosened trellis, morning dew on leaves, pruning shears resting on a stone bench. From a Chase Arenella field guide video."
+      }
+    ],
+    "durationSeconds": 70,
+    "uploadDate": "2026-11-25T04:47:20.079Z"
+  },
+  {
+    "slug": "context-architecture",
+    "title": "Context Architecture: Designing Where Team Knowledge Lives",
+    "description": "Learn what context architecture is and why scattered information quietly taxes every team decision. See the three questions that fix it, why rules beat new tools, and how it makes AI assistants useful.",
+    "transcript": "Context architecture is the deliberate design of where your team's knowledge lives, who can find it, and how it moves between tools. Most teams never choose their information layout. It accumulates. Decisions sit in chat, plans in docs, status in a tracker, and the reasons behind it all in someone's head. Together, these tools impose a hidden tax. Every decision starts with a search. Across a team and a year, that adds up to weeks of lost time, and decisions made on partial information. The fix is to answer three questions and write the answers down. Where does each kind of information live? What is the source of truth when two tools disagree? And how does context travel between homes? A new tool without rules becomes one more place to search. Rules travel, and they survive any tool change. AI assistants are only as good as the context they can reach. Fragmented knowledge makes them confident and wrong. So start small. Pick the information people search for most, give it one home, and redirect every question there for a month. More from Chase Arenella at chase arenella dot com.",
+    "captions": [
+      "Design where team knowledge lives",
+      "Scattered tools impose a hidden tax",
+      "Every decision starts with a search",
+      "Answer three questions, write them down",
+      "Rules travel; new tools don't fix it",
+      "AI needs well-structured context",
+      "Start small: one home, one month"
+    ],
+    "file": "videos/context-architecture/chase-arenella-context-architecture.mp4",
+    "thumbnail": "videos/context-architecture/chase-arenella-context-architecture.jpg",
+    "scenes": [
+      {
+        "file": "assets/images/generated/chase-arenella-context-architecture-1.jpg",
+        "alt": "An empty open-plan office at dawn, scattered sticky notes, coffee mugs and loose papers spread across several separate desks under soft gray light. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-context-architecture-2.jpg",
+        "alt": "A long wooden table covered with stacked folders, binders and index cards in disordered piles, an old wall clock above in a quiet archive room. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-context-architecture-3.jpg",
+        "alt": "A tidy library reading room with a single labeled card catalog cabinet, warm lamplight, and neat shelves receding into the background. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-context-architecture-4.jpg",
+        "alt": "A small sunlit home study with one closed notebook, a pen and a potted plant on a clean desk, morning light through a window. From a Chase Arenella field guide video."
+      }
+    ],
+    "durationSeconds": 68,
+    "uploadDate": "2026-11-25T04:48:44.474Z"
+  },
+  {
+    "slug": "decision-loops",
+    "title": "Decision Loops: Close the Cycle Faster",
+    "description": "Learn what a decision loop is and why the team that closes it faster adapts faster. See where loops really slow down and three structural changes that tighten them without rushing.",
+    "transcript": "A decision loop is the cycle you run to make any choice: notice what changed, decide, act, and learn from the result. The team that closes its loop faster adapts faster. Military strategists call it the OODA loop. Agile teams call it a sprint. A loop closes quickly and compounds, or drags and goes stale. Most teams think their problem is deciding. The delay hides elsewhere. Signals arrive late in dashboards nobody opens. Handoffs add days to a one-hour task. Often nobody checks the result, so the loop never closes. Speed comes from removing waiting, not from thinking less. Time each step of one recent decision. The slowest step is rarely the one people complain about. Push decisions to whoever is closest to the information. Agree in advance on what result would change your mind. And schedule the review when you make the decision. Strong gamers work the same way. They pre-load responses to common situations and save attention for what's new. Write down your weekly decisions and give them default answers. That frees the loop for real thought. More from Chase Arenella at chase arenella dot com.",
+    "captions": [
+      "Observe, decide, act, learn",
+      "Faster loops mean faster adapting",
+      "The delay rarely hides in deciding",
+      "Remove waiting, not thinking",
+      "Time each step of one decision",
+      "Schedule the review up front",
+      "Give routine decisions defaults"
+    ],
+    "file": "videos/decision-loops/chase-arenella-decision-loops.mp4",
+    "thumbnail": "videos/decision-loops/chase-arenella-decision-loops.jpg",
+    "scenes": [
+      {
+        "file": "assets/images/generated/chase-arenella-decision-loops-1.jpg",
+        "alt": "An empty meeting room at dawn, chairs pushed neatly under a long wooden table, pale light spilling through tall windows onto a blank whiteboard. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-decision-loops-2.jpg",
+        "alt": "A cluttered desk with stacked folders, a wall calendar, and a cooling cup of coffee beside an open notebook filled with arrows sketched in pencil. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-decision-loops-3.jpg",
+        "alt": "A quiet office corridor with a wall clock, a row of closed doors, and a sticky-note-free corkboard lit by soft afternoon light. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-decision-loops-4.jpg",
+        "alt": "A quiet desk with a game controller beside a monitor's colorful abstract glow, a headset resting nearby in a dim room at night. From a Chase Arenella field guide video."
+      }
+    ],
+    "durationSeconds": 69,
+    "uploadDate": "2026-11-25T04:50:07.316Z"
+  },
+  {
+    "slug": "feedback-latency",
+    "title": "Feedback Latency: Why Fast Signals Beat Perfect Ones",
+    "description": "Learn what feedback latency is and why a fast, rough signal beats a slow, perfect one. See the warning signs of slow feedback and practical ways to shorten the gap.",
+    "transcript": "Feedback latency is the time between an action and the moment you learn whether it worked. Feedback quality matters, but timing matters more. A rough signal tomorrow beats a perfect one next quarter. Every day you wait, you keep making decisions. If the first action was wrong, you stack more work on top of it. Slow feedback doesn't just delay the lesson. It multiplies the cost of the mistake. How do you spot it? Retrospectives discuss problems nobody remembers clearly. Performance reviews surprise people. Projects look green until the week they turn red. The team argues about causes, because too much happened in between. To shorten the gap, move reviews closer to the work. A short weekly check beats a long quarterly one, while details are fresh and fixes are cheap. Ship smaller. Two days of work teaches you something in two days. Pick one leading indicator per goal that predicts next quarter, and check it every week. Games teach fast because feedback is instant, and strong players review replays. Borrow that habit. Review the week, not just the quarter. More from Chase Arenella at chase arenella dot com.",
+    "captions": [
+      "Latency: action to learning if it worked",
+      "Timing matters more than quality",
+      "Slow feedback multiplies mistakes",
+      "Symptom: green until suddenly red",
+      "Review weekly, ship smaller",
+      "One leading indicator per goal",
+      "Review the week, not just the quarter"
+    ],
+    "file": "videos/feedback-latency/chase-arenella-feedback-latency.mp4",
+    "thumbnail": "videos/feedback-latency/chase-arenella-feedback-latency.jpg",
+    "scenes": [
+      {
+        "file": "assets/images/generated/chase-arenella-feedback-latency-1.jpg",
+        "alt": "A calendar pinned to a corkboard beside a window, autumn light falling across blank date squares and a single red pushpin, quiet office corner. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-feedback-latency-2.jpg",
+        "alt": "An empty meeting room at dusk, chairs pushed in around a long table, a whiteboard wiped clean, city lights faintly visible outside. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-feedback-latency-3.jpg",
+        "alt": "A tidy desk with small sticky notes arranged in a neat grid, an open notebook, a pencil, and a steaming mug in morning light. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-feedback-latency-4.jpg",
+        "alt": "A quiet desk with a game controller resting beside a softly glowing monitor, a lamp casting warm light across a wooden surface at night. From a Chase Arenella field guide video."
+      }
+    ],
+    "durationSeconds": 69,
+    "uploadDate": "2026-11-25T04:51:30.994Z"
+  },
+  {
+    "slug": "how-to-run-a-decision-log",
+    "title": "How Do You Run a Decision Log?",
+    "description": "Learn how to run a decision log that captures your reasoning before results are known. See a simple five-minute template, which decisions to log, and how to make reviews actually happen.",
+    "transcript": "Run a decision log by writing down each meaningful decision when you make it, then setting a date to review it. Memory rewrites history. A month later, people remember the reasoning that matches the outcome, not the reasoning they used. A log captures your thinking before the result is known, so you can judge the decision on its merits instead of its luck. It also shows new teammates why things are the way they are. Keep each entry short enough to write in five minutes. Note who decided and when, the decision in one sentence, the real alternatives you rejected, and your main reason. Then add kill criteria: the result that would make you reverse it. If you'd have to explain it in a meeting six months from now, log it today. A log full of trivia gets ignored. Put the review date on a calendar immediately. When it arrives, ask what happened, whether the kill criteria triggered, and what you'd do differently with the same information. That separates a bad decision from a good one with a bad outcome. More from Chase Arenella at chase arenella dot com.",
+    "captions": [
+      "Log decisions when you make them",
+      "Memory rewrites history",
+      "Judge merits, not luck",
+      "Five-minute entries with kill criteria",
+      "Log what you'd explain in six months",
+      "Calendar the review right away",
+      "Bad decision or bad outcome?"
+    ],
+    "file": "videos/how-to-run-a-decision-log/chase-arenella-how-to-run-a-decision-log.mp4",
+    "thumbnail": "videos/how-to-run-a-decision-log/chase-arenella-how-to-run-a-decision-log.jpg",
+    "scenes": [
+      {
+        "file": "assets/images/generated/chase-arenella-how-to-run-a-decision-log-1.jpg",
+        "alt": "An empty conference room at dawn, chairs pushed neatly under a long wooden table, soft gray light coming through tall windows onto a closed notebook. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-how-to-run-a-decision-log-2.jpg",
+        "alt": "A tidy home office desk with an open lined notebook, a pen resting across the page, and a cooling mug of coffee beside a small lamp. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-how-to-run-a-decision-log-3.jpg",
+        "alt": "A cork bulletin board in a quiet hallway pinned with blank index cards and colored pushpins, a potted plant on a narrow shelf below. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-how-to-run-a-decision-log-4.jpg",
+        "alt": "A wall calendar with one date circled in red ink above a clean desk, afternoon sunlight falling across a stack of folders and a ceramic cup. From a Chase Arenella field guide video."
+      }
+    ],
+    "durationSeconds": 66,
+    "uploadDate": "2026-11-25T04:52:59.369Z"
+  },
+  {
+    "slug": "meta-awareness",
+    "title": "Meta Awareness: Spotting When the Best Strategy Shifts",
+    "description": "Learn what a meta is, why every field has one, and the early signs that the accepted best strategy is starting to shift. See how to build the habit of adapting early, including how leaders can hear from frontline teams.",
+    "transcript": "Meta awareness is noticing when your field's accepted best strategy starts to shift, so you adapt before everyone else does. Gamers call the dominant way to play the meta, short for most effective tactics available. Notice a change late, and you keep running a strategy that has quietly stopped working. Every field has a meta, from sales teams to hiring engineers. It feels like common sense, which is why the change is hard to see. Shifts start as small anomalies. A reliable playbook gives mixed results. A small competitor wins with an approach everyone dismissed. Your best people quietly work around the process. Costs rise while results stay flat. To build the habit, watch the edges, not the center. Track which experiments from newer players keep working after the novelty fades. Write down why you believe your current approach is best. When those reasons stop being true, the strategy is on borrowed time. Leaders often see shifts last, so give frontline teams a low-risk way to report changes, and treat their workarounds as data, not disobedience. More from Chase Arenella at chase arenella dot com.",
+    "captions": [
+      "The meta: today's accepted best strategy",
+      "Every field has one, and it feels obvious",
+      "Shifts start as small anomalies",
+      "Watch the edges, not the center",
+      "Write down why your approach is best",
+      "Treat workarounds as data"
+    ],
+    "file": "videos/meta-awareness/chase-arenella-meta-awareness.mp4",
+    "thumbnail": "videos/meta-awareness/chase-arenella-meta-awareness.jpg",
+    "scenes": [
+      {
+        "file": "assets/images/generated/chase-arenella-meta-awareness-1.jpg",
+        "alt": "A quiet desk at night with a game controller resting beside a monitor's soft blue glow, cables coiled nearby and a half-empty glass of water. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-meta-awareness-2.jpg",
+        "alt": "An empty sales office with rows of desks, a whiteboard wiped mostly clean, and late afternoon light slanting through tall windows. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-meta-awareness-3.jpg",
+        "alt": "A desk with an open blank notebook, a pen resting across its pages, and a cooling cup of coffee beside a small desk lamp. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-meta-awareness-4.jpg",
+        "alt": "An empty meeting room at dawn, chairs pushed neatly under a long table, sticky notes in plain colors grouped on a glass wall. From a Chase Arenella field guide video."
+      }
+    ],
+    "durationSeconds": 69,
+    "uploadDate": "2026-11-25T04:54:31.505Z"
+  },
+  {
+    "slug": "psychological-safety-in-fast-teams",
+    "title": "What Is Psychological Safety, and Why Do Fast Teams Need It More?",
+    "description": "Learn what psychological safety really means and why fast-moving teams depend on it more than slow ones. See the quiet warning signs and four habits leaders can start this week.",
+    "transcript": "Psychological safety is the shared belief that you can raise concerns, ask questions, and admit mistakes without being punished or embarrassed. It is not comfort. It does not mean low standards or constant agreement. A safe team can be demanding. The difference is that bad news travels quickly to the people who can act on it. Fast-moving teams need more of it, because speed shortens the time to catch errors. A doubt kept private for one day can become a week of wrong work. In gaming, calling out a misplay right away lets the team adjust in the same round. Hiding it costs the next three. Low safety rarely looks like conflict. It looks like quiet. Meetings end in agreement, then objections appear in private chats. To build it this week, go first by naming a mistake you made. Thank people who flag problems, before asking whose fault it was. Review the system, not the person. And ask, what would make this plan fail? Then watch how soon problems get reported. More from Chase Arenella at chase arenella dot com.",
+    "captions": [
+      "Safe to speak up, ask, and admit mistakes",
+      "Safety is not comfort or low standards",
+      "Speed multiplies the cost of silence",
+      "Low safety looks like quiet",
+      "Go first and reward the flag",
+      "Review the system, not the person",
+      "Track how soon problems get reported"
+    ],
+    "file": "videos/psychological-safety-in-fast-teams/chase-arenella-psychological-safety-in-fast-teams.mp4",
+    "thumbnail": "videos/psychological-safety-in-fast-teams/chase-arenella-psychological-safety-in-fast-teams.jpg",
+    "scenes": [
+      {
+        "file": "assets/images/generated/chase-arenella-psychological-safety-in-fast-teams-1.jpg",
+        "alt": "An empty conference room at dawn, chairs pushed neatly under a long wooden table, soft golden light spilling through tall windows onto a blank whiteboard. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-psychological-safety-in-fast-teams-2.jpg",
+        "alt": "A quiet desk with a game controller resting beside a monitor's dim blue glow, a headset draped over a lamp in a darkened room. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-psychological-safety-in-fast-teams-3.jpg",
+        "alt": "A meeting table after hours with scattered sticky notes, half-empty water glasses, and closed laptops under a single overhead light. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-psychological-safety-in-fast-teams-4.jpg",
+        "alt": "A sunlit desk with an open notebook, a pen laid across its blank page, and a cooling cup of coffee beside a small potted plant. From a Chase Arenella field guide video."
+      }
+    ],
+    "durationSeconds": 63,
+    "uploadDate": "2026-11-25T05:04:37.395Z"
+  },
+  {
+    "slug": "reversible-vs-irreversible-decisions",
+    "title": "One-Way and Two-Way Door Decisions",
+    "description": "Learn how to sort decisions into one-way and two-way doors based on how easily they can be reversed. See how to match the right amount of process to each choice and avoid common sorting mistakes.",
+    "transcript": "A one-way door decision is hard or costly to undo, while a two-way door decision can be reversed cheaply, and knowing which is which tells you how much process each choice deserves. Most decisions are two-way doors. Yet teams often treat them as permanent, adding meetings and sign-offs that a quick test would settle. Spend process only where it buys something. To sort a choice, ask what it costs to undo in money, time, and trust. Ask how long until you would know it was wrong. Then try to shrink it into a smaller, reversible version first. For two-way doors, name one owner, set a short deadline, and note what would make you reverse. Then act. A wrong call caught in a week costs less than a right call reached in a month. For one-way doors, slow down on purpose. Gather outside views, ask someone to argue the opposite, and record your reasoning. Fear can make a reversible choice feel permanent. A small pilot can become permanent once customers depend on it. And reversible never means endlessly revisited, so set a review date. More from Chase Arenella at chase arenella dot com.",
+    "captions": [
+      "One-way doors are costly to undo",
+      "Most decisions are two-way doors",
+      "Ask: cost to undo, time to know",
+      "Two-way: one owner, short deadline",
+      "One-way: slow down on purpose",
+      "Beware hidden and false one-way doors",
+      "Set a review date and hold it"
+    ],
+    "file": "videos/reversible-vs-irreversible-decisions/chase-arenella-reversible-vs-irreversible-decisions.mp4",
+    "thumbnail": "videos/reversible-vs-irreversible-decisions/chase-arenella-reversible-vs-irreversible-decisions.jpg",
+    "scenes": [
+      {
+        "file": "assets/images/generated/chase-arenella-reversible-vs-irreversible-decisions-1.jpg",
+        "alt": "Two contrasting wooden doors side by side in a quiet hallway, one propped open with a doorstop, the other closed with a heavy iron latch. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-reversible-vs-irreversible-decisions-2.jpg",
+        "alt": "An empty conference room with stacked folders and unused chairs around a long table, afternoon light falling across scattered sticky notes. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-reversible-vs-irreversible-decisions-3.jpg",
+        "alt": "A tidy desk with an open notebook, a small kitchen timer, and a cooling cup of coffee beside a window at morning. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-reversible-vs-irreversible-decisions-4.jpg",
+        "alt": "A wall calendar with one date circled in red pen above a desk holding a closed binder and a desk lamp glowing softly. From a Chase Arenella field guide video."
+      }
+    ],
+    "durationSeconds": 67,
+    "uploadDate": "2026-11-25T05:07:18.804Z"
+  },
+  {
+    "slug": "signal-vs-noise",
+    "title": "Signal vs. Noise",
+    "description": "Learn a simple test for telling signal from noise and why noise grabs attention by default. See where AI filtering helps, where it backfires, and how to keep your filter from becoming a blindfold.",
+    "transcript": "Signal is information that should change what you do, and noise is information that feels important but shouldn't change anything. The simplest test is a question. If this were true, would I act differently? If not, it's noise, however loud it is. A metric that always dips on Mondays is noise. A complaint that matches three others from the same week is signal. Noise wins by default. It's more frequent, more visible, and more emotional. The meaningful change arrives quietly, once, inside something that looks routine. Without a deliberate filter, attention follows volume. AI tools can summarize a week of updates, group feedback by theme, and flag numbers that break their usual range. That frees human attention for judgment. But over-filtering is the risk. A filter trained on what usually matters hides what has never mattered before, and new problems often first look like outliers. So keep a small raw sample in view, and audit the filter on a schedule. Ask what it dropped last month. A filter nobody audits slowly becomes a blindfold. More from Chase Arenella at chase arenella dot com.",
+    "captions": [
+      "Signal should change what you do",
+      "Test: would I act differently?",
+      "Noise is louder, more frequent",
+      "AI handles volume, frees judgment",
+      "Over-filtering hides the new",
+      "Keep a raw sample in view",
+      "Audit the filter on a schedule"
+    ],
+    "file": "videos/signal-vs-noise/chase-arenella-signal-vs-noise.mp4",
+    "thumbnail": "videos/signal-vs-noise/chase-arenella-signal-vs-noise.jpg",
+    "scenes": [
+      {
+        "file": "assets/images/generated/chase-arenella-signal-vs-noise-1.jpg",
+        "alt": "A quiet desk at dawn with a single open notebook, a pen resting across a blank page, and a cooling mug of coffee beside a window. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-signal-vs-noise-2.jpg",
+        "alt": "A cluttered office corner with stacks of paper memos, a blinking desk phone, and scattered sticky notes under harsh fluorescent light. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-signal-vs-noise-3.jpg",
+        "alt": "A long wooden table with index cards sorted into neat colored piles, paper clips grouping each stack, soft afternoon light falling across them. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-signal-vs-noise-4.jpg",
+        "alt": "A dim archive room with tall shelves of boxed files, one box pulled open on a cart, a reading lamp glowing beside it. From a Chase Arenella field guide video."
+      }
+    ],
+    "durationSeconds": 68,
+    "uploadDate": "2026-11-25T04:55:51.894Z"
+  },
+  {
+    "slug": "tilt-management",
+    "title": "Tilt Management: Stop One Mistake From Becoming Five",
+    "description": "Learn what tilt is, where the term comes from, and how frustration from one setback quietly worsens the next decisions. See the early warning signs and simple reset habits leaders can use to keep a team steady.",
+    "transcript": "Tilt is when frustration from one bad outcome leaks into your next decisions and makes them worse. Poker players coined it for someone who loses a big hand, then plays recklessly to win it back. Gamers saw the same pattern. At work, a leader takes a hard hit in a morning meeting, then makes three snap calls before lunch. Tilt is easiest to stop early. Notice when you're replaying the last mistake instead of reading the current situation. Notice speed, bigger risks, short replies, and blame. Good players build a reset into their routine, like a breath, a pause, or a fixed phrase. What matters is that it's automatic, not dependent on willpower. At work, try a rule: no irreversible decisions within an hour of a major setback. And name it out loud. Saying we're a bit tilted gives everyone permission to slow down. Leaders set the emotional tempo. Reset visibly, and your team learns a bad outcome is information, not an emergency. Treat tilt as a skill you practice and review. More from Chase Arenella at chase arenella dot com.",
+    "captions": [
+      "Tilt: one bad outcome spoils the next",
+      "Born at the poker table",
+      "Watch for replaying the last mistake",
+      "Speed, risk, blame are warning signs",
+      "Build an automatic reset ritual",
+      "No irreversible calls for an hour",
+      "A bad outcome is information"
+    ],
+    "file": "videos/tilt-management/chase-arenella-tilt-management.mp4",
+    "thumbnail": "videos/tilt-management/chase-arenella-tilt-management.jpg",
+    "scenes": [
+      {
+        "file": "assets/images/generated/chase-arenella-tilt-management-1.jpg",
+        "alt": "A green felt poker table under a low hanging lamp, scattered chips and a loose deck of cards beside an empty glass. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-tilt-management-2.jpg",
+        "alt": "An empty conference room in late morning, chairs pushed back unevenly, papers scattered across the long table, and a whiteboard wiped blank. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-tilt-management-3.jpg",
+        "alt": "A quiet window seat at dawn with a steaming mug of tea, a closed notebook, and soft light falling across a wooden sill. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-tilt-management-4.jpg",
+        "alt": "A calm office meeting space with chairs neatly tucked in, a small potted plant on the table, and warm afternoon sun through tall windows. From a Chase Arenella field guide video."
+      }
+    ],
+    "durationSeconds": 64,
+    "uploadDate": "2026-11-25T04:57:33.274Z"
+  },
+  {
+    "slug": "what-can-competitive-gaming-teach-leaders",
+    "title": "What Can Competitive Gaming Teach Leaders?",
+    "description": "Learn how competitive gaming builds leadership skills like fast decisions, honest review, and clear callouts under pressure. You'll also see where the comparison between games and work breaks down.",
+    "transcript": "Competitive gaming trains the same skills leadership needs, it just compresses the feedback into minutes. Most workplaces give slow, blurry feedback. You make a call and learn months later whether it worked. In a game, you see the result in seconds. A player can make hundreds of decisions in an evening and review them the next day. Few leaders get that many repetitions in a year. Strong leads share the same habits. They commit to a read with incomplete information and adjust as new facts arrive. They review their own replays without ego. They spot shifts in the dominant strategy. And they manage tilt, resetting after a loss instead of spiraling. Good callouts are brief: what, where, and what to do about it. The same discipline improves meetings and incident response. Say the fact, the location, and the ask, in that order. Agree on roles early, so everyone knows who makes the final call. Still, work has no clear rules, equal starts, or definite end. Take the decision habits, not the idea that colleagues are opponents. More from Chase Arenella at chase arenella dot com.",
+    "captions": [
+      "Games compress feedback into minutes",
+      "Hundreds of decisions in one evening",
+      "Commit to a read, then adjust",
+      "Review replays without ego",
+      "Reset after a loss, don't spiral",
+      "Callouts: fact, location, ask",
+      "Keep the habits, not the rivalry"
+    ],
+    "file": "videos/what-can-competitive-gaming-teach-leaders/chase-arenella-what-can-competitive-gaming-teach-leaders.mp4",
+    "thumbnail": "videos/what-can-competitive-gaming-teach-leaders/chase-arenella-what-can-competitive-gaming-teach-leaders.jpg",
+    "scenes": [
+      {
+        "file": "assets/images/generated/chase-arenella-what-can-competitive-gaming-teach-leaders-1.jpg",
+        "alt": "A quiet desk at night with a game controller resting beside a monitor's soft blue glow, a mug and headphones nearby. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-what-can-competitive-gaming-teach-leaders-2.jpg",
+        "alt": "An open notebook on a wooden table with scribbled diagrams, a pen, and a cooling cup of coffee in morning light. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-what-can-competitive-gaming-teach-leaders-3.jpg",
+        "alt": "An empty meeting room with a whiteboard wiped clean, chairs pushed in around a long table, city lights beyond the window. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-what-can-competitive-gaming-teach-leaders-4.jpg",
+        "alt": "A sunlit office hallway at dawn with open doors, potted plants, and a tidy shared workspace waiting for the day. From a Chase Arenella field guide video."
+      }
+    ],
+    "durationSeconds": 67,
+    "uploadDate": "2026-11-25T04:58:52.668Z"
+  },
+  {
+    "slug": "what-is-ai-augmented-leadership",
+    "title": "What Is AI-Augmented Leadership?",
+    "description": "Learn what AI-augmented leadership means and how it differs from automation. See the everyday uses, the three skills it requires, and the common mistakes to avoid.",
+    "transcript": "AI-augmented leadership means using AI as an extension of your attention, so you spend more time on judgment, people, and direction, while the decisions and accountability stay with you. Automation replaces a task. Augmentation expands a person. An augmented leader uses AI to read fifty reports, surface the three that matter, and then thinks hard about those three. That matters because leadership is mostly judgment under uncertainty. AI can improve the inputs. It can't own the call. In a normal week, the gains are unglamorous. Meeting notes become decisions, owners, and dates within minutes. A Monday summary shows what changed since last week. You edit AI drafts and run quick scenario checks. Getting real value takes three skills. Framing precise questions. Verifying which outputs to trust. And designing repeatable routines instead of one-off prompts. These are the same skills good leaders already use with people. Avoid using AI to produce more; use it to decide better. And don't hide its role. Tell your team where AI was used and who checked it. More from Chase Arenella at chase arenella dot com.",
+    "captions": [
+      "AI extends attention; you own the call",
+      "Augment people, don't automate judgment",
+      "Gains are unglamorous and weekly",
+      "Skills: framing, verifying, routines",
+      "Decide better, don't produce more",
+      "Be open about where AI was used"
+    ],
+    "file": "videos/what-is-ai-augmented-leadership/chase-arenella-what-is-ai-augmented-leadership.mp4",
+    "thumbnail": "videos/what-is-ai-augmented-leadership/chase-arenella-what-is-ai-augmented-leadership.jpg",
+    "scenes": [
+      {
+        "file": "assets/images/generated/chase-arenella-what-is-ai-augmented-leadership-1.jpg",
+        "alt": "An empty glass-walled meeting room at dawn, chairs pushed in around a long table, soft orange light spreading across the polished surface. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-what-is-ai-augmented-leadership-2.jpg",
+        "alt": "A tall stack of printed reports on a wooden desk, three folders pulled aside, a pen and reading lamp casting a warm glow. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-what-is-ai-augmented-leadership-3.jpg",
+        "alt": "A tidy home office corner on a Monday morning, open notebook, cooling mug of coffee, and a wall calendar with blank squares beside a window. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-what-is-ai-augmented-leadership-4.jpg",
+        "alt": "A quiet office kitchen with a whiteboard wiped clean, sticky notes in neat rows of color, and afternoon sunlight falling across the counter. From a Chase Arenella field guide video."
+      }
+    ],
+    "durationSeconds": 69,
+    "uploadDate": "2026-11-25T05:00:11.901Z"
+  },
+  {
+    "slug": "what-is-systems-thinking-for-teams",
+    "title": "What Is Systems Thinking for Teams?",
+    "description": "Learn how systems thinking helps teams see results as the product of structure rather than individual effort. Discover four areas to examine, how feedback loops work, and a simple first exercise to try.",
+    "transcript": "Systems thinking for teams means treating results as the output of a structure, not just individual effort. When a team keeps missing deadlines, the instinct is to find who dropped the ball. A better question is this. What about the way work flows here makes missed deadlines likely? Usually the answer is structural. Work arrives faster than it can be finished. Priorities change mid-sprint. Approvals sit in one person's queue. People tend to produce the results their system is designed for. To start, look at how work flows in and out, how fast feedback arrives, what really gets rewarded, and the one bottleneck limiting everything. Then notice your feedback loops. A reinforcing loop amplifies itself, so trust earns autonomy and better shipping, or oversight slows a team into more missed deadlines. A balancing loop pushes back, like burnout after a hard push. Pick one recurring problem. Write down the last three times it happened and what came just before. Look for the common structural cause, not the common person. Change one rule, handoff, or measure, and watch for a month. More from Chase Arenella at chase arenella dot com.",
+    "captions": [
+      "Results come from structure, not just effort",
+      "Ask what makes the problem likely",
+      "Look at flows, feedback, incentives",
+      "Find the one constraint",
+      "Know your reinforcing and balancing loops",
+      "Find the structural cause, not the person",
+      "Change one rule and watch for a month"
+    ],
+    "file": "videos/what-is-systems-thinking-for-teams/chase-arenella-what-is-systems-thinking-for-teams.mp4",
+    "thumbnail": "videos/what-is-systems-thinking-for-teams/chase-arenella-what-is-systems-thinking-for-teams.jpg",
+    "scenes": [
+      {
+        "file": "assets/images/generated/chase-arenella-what-is-systems-thinking-for-teams-1.jpg",
+        "alt": "An empty meeting room at dawn, chairs pushed in around a long table, a blank whiteboard and soft gray light through tall windows. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-what-is-systems-thinking-for-teams-2.jpg",
+        "alt": "A cluttered desk with a stack of unopened folders, an overflowing inbox tray, and a cold cup of coffee under a lamp. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-what-is-systems-thinking-for-teams-3.jpg",
+        "alt": "A narrow city intersection at dusk with traffic lights glowing and a single lane of cars backed up behind a bottleneck. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-what-is-systems-thinking-for-teams-4.jpg",
+        "alt": "A tidy wooden desk with an open notebook, a pencil, and a wall calendar beside a sunny window with a small plant. From a Chase Arenella field guide video."
+      }
+    ],
+    "durationSeconds": 71,
+    "uploadDate": "2026-11-25T05:01:53.015Z"
+  },
+  {
+    "slug": "which-decisions-should-stay-human",
+    "title": "Which Decisions Should Stay Human When You Use AI?",
+    "description": "Learn a four-question test for deciding which choices a person should own and which AI can prepare or handle. See why people decisions stay human and how to make your team's lines visible.",
+    "transcript": "Keep a decision human when it involves accountability, values trade-offs, unfamiliar situations, or consequences that are hard to reverse. Let AI handle the preparation. Here is a simple test. Ask whether someone will need to explain this decision to the people it affects. Ask whether it trades one thing people care about against another. Ask whether the situation is unlike anything a model has seen. And ask whether a mistake would be expensive or impossible to undo. If any answer is yes, a person should own the call. AI can still lay out options you missed, summarize what's known, argue the other side of your plan, and draft the message that explains the outcome. For routine, reversible, low-stakes choices, like scheduling, letting AI decide is often fine. People decisions are different. Hiring, promotions, performance concerns, and conflicts stay human. Teams notice who actually decided, and trust drops fast when a decision feels outsourced. Make the line visible. Write down which decisions are AI-assisted and which are AI-decided, share the list, and revisit it every few months. More from Chase Arenella at chase arenella dot com.",
+    "captions": [
+      "Four-part test: keep the call human",
+      "Accountability, values, novelty, reversal",
+      "Any yes means a person owns it",
+      "AI prepares: options, summaries, drafts",
+      "Routine, low-stakes choices can go to AI",
+      "People decisions stay with people",
+      "List AI-assisted vs AI-decided work"
+    ],
+    "file": "videos/which-decisions-should-stay-human/chase-arenella-which-decisions-should-stay-human.mp4",
+    "thumbnail": "videos/which-decisions-should-stay-human/chase-arenella-which-decisions-should-stay-human.jpg",
+    "scenes": [
+      {
+        "file": "assets/images/generated/chase-arenella-which-decisions-should-stay-human-1.jpg",
+        "alt": "An empty meeting room at dawn, long table with four neatly placed chairs, pale light falling across a closed notebook and a single pen. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-which-decisions-should-stay-human-2.jpg",
+        "alt": "A tidy desk with scattered index cards, a mug of cooling coffee, and a laptop glowing softly with an abstract colorful pattern. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-which-decisions-should-stay-human-3.jpg",
+        "alt": "A quiet office hallway in late afternoon light, a row of closed doors, a potted plant, and an empty bench beside a window. From a Chase Arenella field guide video."
+      },
+      {
+        "file": "assets/images/generated/chase-arenella-which-decisions-should-stay-human-4.jpg",
+        "alt": "A corkboard on a wall with blank colored sticky notes arranged in two columns, pushpins and a calendar with no visible writing nearby. From a Chase Arenella field guide video."
+      }
+    ],
+    "durationSeconds": 71,
+    "uploadDate": "2026-11-25T05:03:16.652Z"
+  }
+]

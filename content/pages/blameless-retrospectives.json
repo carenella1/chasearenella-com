@@ -11,14 +11,22 @@
       "paragraphs": [
         "Blameless does not mean nobody is accountable. It means separating <strong>accountability</strong> from <strong>blame</strong>. Accountability asks who will own the fix. Blame asks who should feel bad. Only the first improves the team.",
         "People act on the information, tools, and incentives in front of them. If one person's slip can cause a failure, the system had no safeguard. That is the finding. Ask what the system made easy and what it made hard. 'Human error' is where the review starts, not where it ends."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-blameless-retrospectives-1.jpg",
+        "alt": "A tidy workshop bench with one wrench set beside an open toolbox, a clear safety guard fitted over a bench grinder, lit by warm overhead light. Illustration for \"What blameless actually means\", from \"Blameless Retrospectives\", a field guide by Chase Arenella."
+      }
     },
     {
       "heading": "Why blame makes reviews dishonest",
       "paragraphs": [
         "When a review ends in punishment, people learn to hide things. They soften timelines, skip the shortcut they took, and stay quiet about near misses. The team loses the exact data it needs. In competitive gaming, a squad that dreads replay review stops calling out its own misplays, and the same errors repeat.",
         "Honesty is a function of cost. Lower the cost of saying 'I made that call,' and the team gets more accurate information, sooner. Accurate information is what makes the next decision better. A review that protects feelings but hides facts has no value."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-blameless-retrospectives-2.jpg",
+        "alt": "A dim gaming den at night, a controller resting beside a dark monitor, a notepad flipped over on the desk, curtains drawn tight. Illustration for \"Why blame makes reviews dishonest\", from \"Blameless Retrospectives\", a field guide by Chase Arenella."
+      }
     },
     {
       "heading": "The structure that keeps it honest",
@@ -34,6 +42,10 @@
           "<strong>Fix the system.</strong> Write actions aimed at safeguards, not at reminding people to be careful.",
           "<strong>Assign owners and dates.</strong> Every action gets one name and one deadline."
         ]
+      },
+      "image": {
+        "file": "assets/images/sections/chase-arenella-blameless-retrospectives-3.jpg",
+        "alt": "Overhead view of a meeting table with colored sticky notes in neat columns along a blank paper timeline, a small kitchen timer, and pens aligned in a row. Illustration for \"The structure that keeps it honest\", from \"Blameless Retrospectives\", a field guide by Chase Arenella."
       }
     },
     {
@@ -41,7 +53,11 @@
       "paragraphs": [
         "Blame returns through language. Words like 'careless' or 'should have' turn a review into a verdict. Leaders also kill honesty by speaking first, because their view becomes the frame everyone else defends or echoes.",
         "Fix both. Speak last, and go first on your own mistakes. Then check the action list at the next review. A retrospective with no follow-up teaches the team that the exercise is theater. Publish the notes so other teams can learn from them too."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-blameless-retrospectives-4.jpg",
+        "alt": "Doorway view of an empty conference room, chairs pushed back, an unmarked folder of stapled notes left on the table, afternoon light slanting through blinds. Illustration for \"How blameless reviews fail\", from \"Blameless Retrospectives\", a field guide by Chase Arenella."
+      }
     }
   ],
   "faqs": [

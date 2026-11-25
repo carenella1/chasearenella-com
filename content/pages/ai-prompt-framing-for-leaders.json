@@ -11,7 +11,11 @@
       "paragraphs": [
         "AI tools return the most likely useful response to what you typed. Ask \"How do I improve team performance?\" and you get the average answer: communicate more, set clear goals, give feedback. That advice is true for everyone, so it helps no one.",
         "The fix is not clever wording. It is <strong>specificity about the decision</strong>. The tool can only be as sharp as the situation you describe."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-ai-prompt-framing-for-leaders-1.jpg",
+        "alt": "A long open shelf of identical plain white mugs lined up under flat fluorescent office kitchen light, each one indistinguishable from the next. Illustration for \"Why generic questions get generic answers\", from \"How Do You Ask AI the Right Questions as a Leader?\", a field guide by Chase Arenella."
+      }
     },
     {
       "heading": "Frame the question around a decision",
@@ -28,6 +32,10 @@
           "<strong>Your current lean:</strong> what you believe and why.",
           "<strong>Output format:</strong> ranked options, a one-page memo, or the three biggest risks."
         ]
+      },
+      "image": {
+        "file": "assets/images/sections/chase-arenella-ai-prompt-framing-for-leaders-2.jpg",
+        "alt": "Overhead view of a wooden desk with a notebook open to a sketched grid of five empty boxes, a small stopwatch, and a freshly sharpened pencil. Illustration for \"Frame the question around a decision\", from \"How Do You Ask AI the Right Questions as a Leader?\", a field guide by Chase Arenella."
       }
     },
     {
@@ -35,14 +43,22 @@
       "paragraphs": [
         "AI tools tend to work inside the framing they are given. Write \"Why is option A best?\" and you will get reasons A is best. Ask instead for the strongest case against your lean, the assumptions it depends on, and what evidence would change the recommendation.",
         "This is the pre-mortem habit. Competitive teams do it before a match: assume the strategy fails, then find where. Try the same prompt: <em>\"Assume this plan failed in six months. What are the three most likely causes?\"</em>"
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-ai-prompt-framing-for-leaders-3.jpg",
+        "alt": "A dim practice room where a game controller rests beside a monitor glowing blank blue, a magnetic tactics board on the wall covered in red arrows. Illustration for \"Ask for friction, not agreement\", from \"How Do You Ask AI the Right Questions as a Leader?\", a field guide by Chase Arenella."
+      }
     },
     {
       "heading": "Work in short rounds and keep the call",
       "paragraphs": [
         "Treat the first answer as a draft. Follow with narrow questions: \"Which of these risks is easiest to reverse?\" or \"What would I need to know to be 80 percent sure?\" Each round should sharpen the picture, not restate it.",
         "The tool supplies options and counterarguments. You own the decision. Leave out sensitive data you would not share outside the company, and check any claim that would change what you do."
-      ]
+      ],
+      "image": {
+        "file": "assets/images/sections/chase-arenella-ai-prompt-framing-for-leaders-4.jpg",
+        "alt": "Low-angle view of a small round cafe table holding a half-finished espresso, a sand timer mid-pour, and a closed unmarked laptop with a brass padlock on top. Illustration for \"Work in short rounds and keep the call\", from \"How Do You Ask AI the Right Questions as a Leader?\", a field guide by Chase Arenella."
+      }
     }
   ],
   "faqs": [
