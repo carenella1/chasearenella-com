@@ -14,6 +14,7 @@ const PAGES_DIR = path.join(ROOT, "content", "pages");
 
 const BLOCKED = [
   { re: /\bscott\b/i, why: "the full legal name" },
+  { re: /chasescottarenella/i, why: "the full legal name" },
   { re: /linkedin/i, why: "a LinkedIn reference" },
   { re: /expunge/i, why: "a legal-matter reference" },
 ];
@@ -84,4 +85,4 @@ function checkPage(page, knownSlugs) {
   return problems;
 }
 
-module.exports = { ROOT, PAGES_DIR, readJson, loadPages, bodyText, wordCount, stripTags, checkPage };
+module.exports = { ROOT, PAGES_DIR, readJson, loadPages, bodyText, wordCount, stripTags, checkPage, BLOCKED };

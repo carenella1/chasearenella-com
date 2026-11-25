@@ -1,7 +1,8 @@
 name: Write Page
 
-# Every Monday: write the next guide from content/queue.json, rebuild the
-# site, and open a PR to review. auto-merge.yml merges it after 72 hours.
+# Every Monday: write the next guide from content/queue.json, illustrate its
+# sections, make its video, rebuild the site, and open a PR to review.
+# auto-merge.yml merges it after 72 hours.
 on:
   schedule:
     - cron: '0 7 * * 1'
@@ -45,6 +46,25 @@ jobs:
         run: node scripts/write-page.js
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      # A failed image or video doesn't block the guide; Make Videos retries
+      # it after this PR merges.
+      - name: Install ffmpeg and fonts
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends ffmpeg fonts-dejavu-core
+
+      - name: Illustrate the new guide's sections
+        continue-on-error: true
+        run: node scripts/make-section-images.js --limit 1
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      - name: Make the new guide's video
+        continue-on-error: true
+        run: node scripts/make-videos.js --limit 1
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
       - name: Build the site
         run: node scripts/build.js

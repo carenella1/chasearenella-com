@@ -43,4 +43,6 @@ jobs:
 
           if [ "$MERGED" -eq 1 ]; then
             gh workflow run search-ping.yml --ref main
+            # Backfill any video or section images that waited on the open PR.
+            gh workflow run make-videos.yml --ref main
           fi

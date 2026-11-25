@@ -11,7 +11,11 @@ const cards = require("./lib/cards");
 const site = readJson(path.join(ROOT, "content", "site.json"));
 const PERSON_ID = `${site.url}/#person`;
 const WEBSITE_ID = `${site.url}/#website`;
-const RESERVED = new Set(["about", "assets", "content", "scripts"]);
+const RESERVED = new Set(["about", "assets", "content", "scripts", "videos"]);
+const VIDEOS_FILE = path.join(ROOT, "content", "videos.json");
+// Videos made by scripts/make-videos.js. Set in main(); the nav shows a
+// Videos link only once there is at least one.
+let videos = [];
 
 function esc(s) {
   return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -39,6 +43,10 @@ const HOME_IMAGE = {
   title: "Decisions, Systems & AI-Augmented Leadership",
   seed: "home",
 };
+
+function sectionImages(page) {
+  return page.sections.filter((s) => s.image).map((s) => ({ file: s.image.file }));
+}
 
 function imageUrl(img) {
   return `${site.url}/${img.file}`;
@@ -121,7 +129,7 @@ ${graph}
   <div class="wrap header-row">
     <a class="brand" href="/">${esc(site.name)}<span>Field Guide</span></a>
     <nav aria-label="Main">
-      <a href="/#guides">Guides</a>
+      <a href="/#guides">Guides</a>${videos.length ? `\n      <a href="/videos/">Videos</a>` : ""}
       <a href="/about/">About</a>
     </nav>
   </div>
@@ -149,7 +157,11 @@ function renderSection(s) {
   const paras = s.paragraphs.map((p) => `<p>${p}</p>`).join("\n");
   const tag = s.list && s.list.type === "ol" ? "ol" : "ul";
   const list = s.list ? `\n<${tag}>\n${s.list.items.map((i) => `  <li>${i}</li>`).join("\n")}\n</${tag}>` : "";
-  return `<section>\n<h2>${esc(s.heading)}</h2>\n${paras}${list}\n</section>`;
+  // Section images come from scripts/make-section-images.js.
+  const img = s.image
+    ? `\n<figure class="section-img"><img src="/${s.image.file}" alt="${esc(s.image.alt)}" width="1536" height="1024" loading="lazy"></figure>`
+    : "";
+  return `<section>\n<h2>${esc(s.heading)}</h2>${img}\n${paras}${list}\n</section>`;
 }
 
 function renderGuide(page, bySlug) {
@@ -169,6 +181,10 @@ function renderGuide(page, bySlug) {
         .map((r) => `  <li><a href="/${r.slug}/">${esc(r.title)}</a><span>${esc(r.description)}</span></li>`)
         .join("\n")}\n</ul>\n</aside>`
     : "";
+  const vid = videos.find((v) => v.slug === page.slug);
+  const watch = vid
+    ? `<p class="watch"><a href="/videos/${page.slug}/">▶ Watch the ${Math.round(vid.durationSeconds / 10) * 10}-second video version</a></p>\n`
+    : "";
   const further = page.further
     ? `<p class="further">Further reading: <a href="${page.further.href}" rel="noopener">${esc(page.further.label)}</a></p>`
     : "";
@@ -181,7 +197,7 @@ function renderGuide(page, bySlug) {
 <p class="label">${page.type === "question" ? "Short answer" : "In one line"}</p>
 <p>${page.answer}</p>
 </div>
-<figure class="card"><img src="/${image.file}" alt="${esc(image.alt)}" width="${cards.W}" height="${cards.H}" loading="lazy"></figure>
+${watch}<figure class="card"><img src="/${image.file}" alt="${esc(image.alt)}" width="${cards.W}" height="${cards.H}" loading="lazy"></figure>
 ${page.sections.map(renderSection).join("\n")}
 ${faqs}
 ${further}
@@ -200,7 +216,9 @@ ${relatedHtml}`;
       publisher: { "@id": PERSON_ID },
       datePublished: page.published,
       dateModified: updated,
-      image: { "@id": `${imageUrl(image)}#image` },
+      image: sectionImages(page).length
+        ? [{ "@id": `${imageUrl(image)}#image` }, ...sectionImages(page).map(imageUrl)]
+        : { "@id": `${imageUrl(image)}#image` },
       mainEntityOfPage: url,
       isPartOf: { "@id": WEBSITE_ID },
       inLanguage: "en-US",
@@ -315,6 +333,156 @@ ${site.elsewhere.map((e) => `  <li><a href="${e.href}" rel="noopener">${esc(e.la
   return layout({ title: `About | ${site.name}`, description: site.personDescription, canonical: url, schema, body, image: HOME_IMAGE });
 }
 
+function watchUrl(v) {
+  return `${site.url}/videos/${v.slug}/`;
+}
+
+function isoDuration(seconds) {
+  const m = Math.floor(seconds / 60);
+  const s = seconds % 60;
+  return `PT${m ? `${m}M` : ""}${s}S`;
+}
+
+function videoNode(v) {
+  return {
+    "@type": "VideoObject",
+    "@id": `${watchUrl(v)}#video`,
+    name: `${v.title} | ${site.name}`,
+    description: v.description,
+    thumbnailUrl: [`${site.url}/${v.thumbnail}`],
+    uploadDate: v.uploadDate,
+    duration: isoDuration(v.durationSeconds),
+    contentUrl: `${site.url}/${v.file}`,
+    transcript: v.transcript,
+    inLanguage: "en-US",
+    author: { "@id": PERSON_ID },
+    creator: { "@id": PERSON_ID },
+    publisher: { "@id": PERSON_ID },
+    isPartOf: { "@id": WEBSITE_ID },
+  };
+}
+
+// The video is the page's main content, which Google requires before it
+// will index a video on a page.
+function renderWatch(v, page) {
+  const url = watchUrl(v);
+  const sentences = v.transcript.match(/[^.!?]+[.!?]+/g) || [v.transcript];
+  const paras = [];
+  for (let i = 0; i < sentences.length; i += 4) paras.push(sentences.slice(i, i + 4).join(" ").trim());
+  const date = v.uploadDate.slice(0, 10);
+
+  const body = `<article class="guide watch-page">
+<p class="crumbs"><a href="/videos/">Videos</a></p>
+<h1>${esc(v.title)}</h1>
+<p class="byline">A video by ${esc(site.name)} · <time datetime="${date}">${formatDate(date)}</time> · ${Math.round(v.durationSeconds)} seconds</p>
+<video class="player" controls preload="metadata" playsinline poster="/${v.thumbnail}" width="1920" height="1080">
+  <source src="/${v.file}" type="video/mp4">
+</video>
+<p class="lede">${esc(v.description)}</p>
+<p class="further">The full written guide: <a href="/${page.slug}/">${esc(page.title)}</a></p>
+<section>
+<h2>Transcript</h2>
+${paras.map((p) => `<p>${esc(p)}</p>`).join("\n")}
+</section>
+<section>
+<h2>Scenes from this video</h2>
+<div class="scenes">
+${v.scenes.map((s) => `<img src="/${s.file}" alt="${esc(s.alt)}" width="1536" height="1024" loading="lazy">`).join("\n")}
+</div>
+</section>
+</article>`;
+
+  const schema = [
+    websiteNode(),
+    personNode(),
+    videoNode(v),
+    breadcrumbs([
+      ["Videos", `${site.url}/videos/`],
+      [v.title, url],
+    ]),
+  ];
+  return layout({
+    title: `${v.title} (Video) | ${site.name}`,
+    description: v.description,
+    canonical: url,
+    schema,
+    body,
+    ogType: "video.other",
+    image: null,
+  }).replace(
+    '<meta name="twitter:card" content="summary">',
+    `<meta property="og:image" content="${site.url}/${v.thumbnail}">
+<meta property="og:video" content="${site.url}/${v.file}">
+<meta property="og:video:type" content="video/mp4">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="${site.url}/${v.thumbnail}">`
+  );
+}
+
+function renderVideoHub() {
+  const list = videos.slice().sort((a, b) => b.uploadDate.localeCompare(a.uploadDate));
+  const body = `<section class="intro">
+<h1>Videos by ${esc(site.name)}</h1>
+<p class="lede">Short narrated explainers, one for each field guide entry: the idea, why it matters, and how to use it.</p>
+</section>
+<ul class="video-list">
+${list
+  .map(
+    (v) => `  <li><a href="/videos/${v.slug}/"><img src="/${v.thumbnail}" alt="${esc(v.title)}: a video by ${esc(site.name)}" width="1280" height="720" loading="lazy"><span class="t">${esc(v.title)}</span></a><span>${esc(v.description)}</span></li>`
+  )
+  .join("\n")}
+</ul>`;
+  const url = `${site.url}/videos/`;
+  const schema = [
+    websiteNode(),
+    personNode(),
+    {
+      "@type": "CollectionPage",
+      "@id": `${url}#page`,
+      url,
+      name: `Videos by ${site.name}`,
+      about: { "@id": PERSON_ID },
+      isPartOf: { "@id": WEBSITE_ID },
+      hasPart: list.map((v) => ({ "@id": `${watchUrl(v)}#video` })),
+    },
+    breadcrumbs([
+      ["Field Guide", `${site.url}/`],
+      ["Videos", url],
+    ]),
+  ];
+  return layout({
+    title: `Videos | ${site.name}`,
+    description: `Narrated video explainers of the field guide by ${site.name}.`,
+    canonical: url,
+    schema,
+    body,
+    image: HOME_IMAGE,
+  });
+}
+
+function renderVideoSitemap() {
+  const xml = (s) => esc(s).replace(/'/g, "&apos;");
+  const entry = (v) => `  <url>
+    <loc>${watchUrl(v)}</loc>
+    <video:video>
+      <video:thumbnail_loc>${site.url}/${v.thumbnail}</video:thumbnail_loc>
+      <video:title>${xml(`${v.title} | ${site.name}`)}</video:title>
+      <video:description>${xml(v.description)}</video:description>
+      <video:content_loc>${site.url}/${v.file}</video:content_loc>
+      <video:duration>${Math.round(v.durationSeconds)}</video:duration>
+      <video:publication_date>${v.uploadDate}</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="${site.url}/about/">${xml(site.name)}</video:uploader>
+    </video:video>
+${v.scenes.map((s) => `    <image:image><image:loc>${site.url}/${s.file}</image:loc></image:image>`).join("\n")}
+  </url>`;
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+${videos.map(entry).join("\n")}
+</urlset>
+`;
+}
+
 function render404() {
   return layout({
     title: `Page not found | ${site.name}`,
@@ -330,12 +498,19 @@ function renderSitemap(pages) {
   const urls = [
     [`${site.url}/`, latest, HOME_IMAGE],
     [`${site.url}/about/`, latest],
-    ...pages.map((p) => [pageUrl(p.slug), p.updated || p.published, guideImage(p)]),
+    ...pages.map((p) => [pageUrl(p.slug), p.updated || p.published, [guideImage(p), ...sectionImages(p)]]),
   ];
-  const entry = ([loc, lastmod, img]) =>
-    img
-      ? `  <url><loc>${loc}</loc><lastmod>${lastmod}</lastmod><image:image><image:loc>${imageUrl(img)}</image:loc></image:image></url>`
-      : `  <url><loc>${loc}</loc><lastmod>${lastmod}</lastmod></url>`;
+  if (videos.length) {
+    const thumb = (v) => ({ file: v.thumbnail });
+    const newest = videos.map((v) => v.uploadDate.slice(0, 10)).sort().pop();
+    urls.push([`${site.url}/videos/`, newest, thumb(videos[0])]);
+    for (const v of videos) urls.push([watchUrl(v), v.uploadDate.slice(0, 10), thumb(v)]);
+  }
+  const entry = ([loc, lastmod, imgs]) =>
+    `  <url><loc>${loc}</loc><lastmod>${lastmod}</lastmod>${[imgs || []]
+      .flat()
+      .map((img) => `<image:image><image:loc>${imageUrl(img)}</image:loc></image:image>`)
+      .join("")}</url>`;
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${urls.map(entry).join("\n")}
@@ -361,6 +536,11 @@ function main() {
   const pages = loadPages();
   const bySlug = new Map(pages.map((p) => [p.slug, p]));
   const known = new Set(bySlug.keys());
+  videos = (fs.existsSync(VIDEOS_FILE) ? readJson(VIDEOS_FILE) : []).filter((v) => {
+    if (bySlug.has(v.slug) && fs.existsSync(path.join(ROOT, v.file))) return true;
+    console.warn(`Skipping video "${v.slug}": no matching guide or missing ${v.file}`);
+    return false;
+  });
 
   const problems = [];
   for (const p of pages) {
@@ -380,6 +560,11 @@ function main() {
   write("index.html", renderHome(pages));
   write("about/index.html", renderAbout());
   write("404.html", render404());
+  for (const v of videos) write(`videos/${v.slug}/index.html`, renderWatch(v, bySlug.get(v.slug)));
+  if (videos.length) {
+    write("videos/index.html", renderVideoHub());
+    write("video-sitemap.xml", renderVideoSitemap());
+  }
   write("sitemap.xml", renderSitemap(pages));
   // Read by carenella1.github.io to link each essay to the guides built on it.
   write("guides.json", `${JSON.stringify(
@@ -390,8 +575,9 @@ function main() {
     null,
     2
   )}\n`);
-  write("robots.txt", `User-agent: *\nAllow: /\nDisallow: /content/\nDisallow: /scripts/\n\nSitemap: ${site.url}/sitemap.xml\n`);
-  console.log(`Built ${pages.length} guides and their cards, home, about, 404, sitemap.`);
+  const sitemaps = [`${site.url}/sitemap.xml`, ...(videos.length ? [`${site.url}/video-sitemap.xml`] : [])];
+  write("robots.txt", `User-agent: *\nAllow: /\nDisallow: /content/\nDisallow: /scripts/\n\n${sitemaps.map((s) => `Sitemap: ${s}`).join("\n")}\n`);
+  console.log(`Built ${pages.length} guides and their cards, ${videos.length} video page(s), home, about, 404, sitemaps.`);
 }
 
 main();

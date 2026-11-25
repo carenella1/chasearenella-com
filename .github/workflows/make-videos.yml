@@ -1,0 +1,115 @@
+name: Make Videos
+
+# Makes a video for each guide that doesn't have one yet
+# (scripts/make-videos.js) and section images for any guide missing them
+# (scripts/make-section-images.js), rebuilds the site, and commits straight to
+# main. New guides normally get both inside the Write Page PR; this
+# catches any that failed there, and did the first backfills.
+#
+# Runs weekly, on demand, whenever the video code changes on main, and
+# right after Auto-merge publishes a guide (which also unblocks the gate).
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/make-videos.js
+      - scripts/make-section-images.js
+      - scripts/lib/video.js
+  schedule:
+    - cron: '0 15 * * 3'
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Max videos to make this run"
+        default: "16"
+        required: true
+
+concurrency:
+  group: write-page
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  videos:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      # An open Write Page PR rebuilds the same pages and sitemap; committing
+      # to main first would leave it unable to merge. Wait for it.
+      - name: Skip while an auto-page PR is open
+        id: gate
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          OPEN=$(gh pr list --label auto-page --state open --json number --jq '[.[].number | "#\(.)"] | join(", ")')
+          if [ -n "$OPEN" ]; then
+            echo "::notice::Auto-page PR(s) $OPEN still open; skipping videos this run."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install ffmpeg and fonts
+        if: steps.gate.outputs.skip != 'true'
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends ffmpeg fonts-dejavu-core
+
+      - name: Setup Node
+        if: steps.gate.outputs.skip != 'true'
+        uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+
+      - name: Install the card renderer
+        if: steps.gate.outputs.skip != 'true'
+        run: npm ci
+
+      - name: Make videos
+        id: build
+        if: steps.gate.outputs.skip != 'true'
+        continue-on-error: true
+        run: node scripts/make-videos.js --limit "${{ inputs.limit || '16' }}"
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      - name: Make section images
+        id: section_images
+        if: steps.gate.outputs.skip != 'true'
+        continue-on-error: true
+        run: node scripts/make-section-images.js --limit "${{ inputs.limit || '16' }}"
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      # Runs even if some videos or images failed: finished ones are already in
+      # content/videos.json and must be committed so a re-run skips them.
+      - name: Build the site
+        if: steps.gate.outputs.skip != 'true'
+        run: node scripts/build.js
+
+      - name: Commit and push
+        if: steps.gate.outputs.skip != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No new videos; nothing to commit."
+          else
+            git commit -m "Videos and images: $(date +'%Y-%m-%d')"
+            git pull --rebase
+            git push
+            # Pushes made with github.token don't fire push triggers.
+            gh workflow run search-ping.yml --ref main
+          fi
+
+      - name: Fail the run if anything failed
+        if: steps.build.outcome == 'failure' || steps.section_images.outcome == 'failure'
+        run: |
+          echo "::error::A video or section image failed; see the 'Make videos' and 'Make section images' steps."
+          exit 1

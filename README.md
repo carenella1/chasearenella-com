@@ -7,8 +7,11 @@ A field guide: short reference pages on decision-making, systems thinking, and A
 - `content/pages/*.json` is one guide per file. `content/site.json` holds the site name and outbound links.
 - `npm ci`, then `node scripts/build.js`, renders the HTML at `/<slug>/`, plus the home, about, and 404 pages, `sitemap.xml` (with image entries), `robots.txt`, and `guides.json`. The output is committed.
 - Each guide gets a 1200×630 title card at `assets/images/chase-arenella-<slug>.png` (`scripts/lib/cards.js`): text plus a network pattern seeded by the slug, rendered with the OFL fonts in `scripts/fonts/`. It's the page image, the link-preview image, and the image in the sitemap.
+- Each guide section gets a generated scene image (`scripts/make-section-images.js`) at `assets/images/sections/chase-arenella-<slug>-<n>.jpg`, shown under the section heading and listed in the sitemap. Scenes show places and objects only, never people.
+- Each guide gets a narrated ~70-second video (`scripts/make-videos.js`, `scripts/lib/video.js`): Claude writes the script and scenes, OpenAI draws the scenes and reads the script, ffmpeg renders it. Videos live at `videos/<slug>/`, are recorded in `content/videos.json`, and get a watch page at `/videos/<slug>/`, a hub at `/videos/`, and `video-sitemap.xml`.
+- `.github/workflows/make-videos.yml` backfills any guide missing a video or section images. It runs on Wednesdays, on demand, when the video code changes, and right after Auto-merge publishes a guide. It skips while a Write Page PR is open.
 - `guides.json` lists each guide with the main-site essay it builds on. The main site reads it to link each essay back to its guides.
-- `.github/workflows/write-page.yml` runs every Monday at 07:00 UTC. It writes the next topic from `content/queue.json` with `scripts/write-page.js`, rebuilds the site, and opens a PR to review.
+- `.github/workflows/write-page.yml` runs every Monday at 07:00 UTC. It writes the next topic from `content/queue.json` with `scripts/write-page.js`, illustrates its sections, makes its video, rebuilds the site, and opens a PR to review.
 - `.github/workflows/auto-merge.yml` merges that PR once it's 72 hours old, unless it has the `hold` label or a changes-requested review.
 - `.github/workflows/search-ping.yml` runs after each change to `main`. It waits for the deploy, then submits the sitemap's URLs to IndexNow (`scripts/ping-search-engines.js`; the key file is the `.txt` at the root).
 
@@ -22,5 +25,5 @@ A field guide: short reference pages on decision-making, systems thinking, and A
 
 ## Setup
 
-- Repo secret `ANTHROPIC_API_KEY`.
+- Repo secrets `ANTHROPIC_API_KEY` and `OPENAI_API_KEY` (images and narration).
 - Settings → Actions → General → Workflow permissions: allow GitHub Actions to create pull requests.
